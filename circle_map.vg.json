@@ -21,17 +21,17 @@
               "lookup": "City_country",
               "from": {
                 "data": {
-                  "url": "data/ne_50m_populated_places.csv"
+                  "url": "data/worldcities.csv"
                 },
                 "key": "city_country_topo",
-                "fields": ["LONGITUDE","LATITUDE"]
+                "fields": ["lat","lng"]
               }
             }
           ],
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
-          "longitude": {"field": "LONGITUDE", "type": "quantitative"},
-          "latitude": {"field": "LATITUDE", "type": "quantitative"},
+          "longitude": {"field": "lng", "type": "quantitative"},
+          "latitude": {"field": "lat", "type": "quantitative"},
           "size": {
             "field": "Cost_of_Living_Index",
             "type": "quantitative",
