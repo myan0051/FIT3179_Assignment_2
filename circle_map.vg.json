@@ -14,18 +14,17 @@
       },
       {
         "data": {
-            "url": "data/ne_50m.topojson",
-            "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+            "url": "data/Cost_of_living_index.csv"
           },
         "transform": [
             {
-              "lookup": "City",
+              "lookup": "City_country",
               "from": {
                 "data": {
                   "url": "data/ne_50m_populated_places.csv"
                 },
-                "key": "NAME",
-                "fields": ["City","Cost_of_Living_Index"]
+                "key": "city_country_topo",
+                "fields": ["LONGITUDE","LATITUDE"]
               }
             }
           ],
@@ -37,13 +36,13 @@
             "field": "Cost_of_Living_Index",
             "type": "quantitative",
             "title": "Magnitude (Richter scale)",
-            "scale": {"domain": [0, 150]}
+            "scale": {"domain": [20, 130]}
           },
           "color": {
             "field": "Cost_of_Living_Index",
             "type": "quantitative",
             "title": "Depth in km",
-            "scale": {"scheme": "reds"}
+            "scale": {"scheme": "viridis","domain": [20, 130]}
           }
         }
       }

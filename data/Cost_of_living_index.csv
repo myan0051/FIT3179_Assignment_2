@@ -10,52 +10,52 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 9,Stavanger,"Stavanger, Norway", Norway,111,38.85,76.85,95.97,134.55,112.62
 10,Oslo,"Oslo, Norway", Norway,107.14,48.58,79.42,93.81,114.42,104.3
 11,Bergen,"Bergen, Norway", Norway,102.87,39.38,72.82,87.02,116.35,108.19
-12,New York,"New York, NY, United States"," NY, United States",100,100,100,100,100,100
+12,New York,"New York City, United States of America"," NY, United States of America",100,100,100,100,100,100
 13,Trondheim,"Trondheim, Norway", Norway,99.73,39.87,71.39,82.31,120.45,113.08
-14,San Francisco,"San Francisco, CA, United States"," CA, United States",96.88,106.49,101.43,101.93,94.58,125.95
-15,Honolulu,"Honolulu, HI, United States"," HI, United States",93.72,63.96,79.63,96.32,86.72,113.58
-16,Anchorage,"Anchorage, AK, United States"," AK, United States",93.19,39.45,67.75,96.74,78.76,138.38
-17,Brooklyn,"Brooklyn, NY, United States"," NY, United States",90.31,81.02,85.91,83.16,95.27,87.05
-18,Washington,"Washington, DC, United States"," DC, United States",88.5,70.28,79.87,86.63,86.23,131.53
-19,Santa Rosa,"Santa Rosa, CA, United States"," CA, United States",88.27,56.69,73.32,84.35,82.55,116.47
+14,San Francisco,"San Francisco, United States of America"," CA, United States of America",96.88,106.49,101.43,101.93,94.58,125.95
+15,Honolulu,"Honolulu, United States of America"," HI, United States of America",93.72,63.96,79.63,96.32,86.72,113.58
+16,Anchorage,"Anchorage, United States of America"," AK, United States of America",93.19,39.45,67.75,96.74,78.76,138.38
+17,Brooklyn,"Brooklyn, United States of America"," NY, United States of America",90.31,81.02,85.91,83.16,95.27,87.05
+18,Washington,"Washington, United States of America"," DC, United States of America",88.5,70.28,79.87,86.63,86.23,131.53
+19,Santa Rosa,"Santa Rosa, United States of America"," CA, United States of America",88.27,56.69,73.32,84.35,82.55,116.47
 20,Copenhagen,"Copenhagen, Denmark", Denmark,87.91,47.84,68.94,64.59,113.18,114.05
-21,Charleston,"Charleston, SC, United States"," SC, United States",86.87,46.12,67.58,90.86,73.48,106.06
+21,Charleston,"Charleston, United States of America"," SC, United States of America",86.87,46.12,67.58,90.86,73.48,106.06
 22,Luxembourg,"Luxembourg, Luxembourg", Luxembourg,86.85,61.31,74.76,70.75,99.49,120.25
-23,Bellevue,"Bellevue, WA, United States"," WA, United States",85.97,61.2,74.24,78.24,82.29,186
-24,Seattle,"Seattle, WA, United States"," WA, United States",85.51,64.7,75.66,83.72,80.27,140
+23,Bellevue,"Bellevue, United States of America"," WA, United States of America",85.97,61.2,74.24,78.24,82.29,186
+24,Seattle,"Seattle, United States of America"," WA, United States of America",85.51,64.7,75.66,83.72,80.27,140
 25,Tokyo,"Tokyo, Japan", Japan,84.78,36.41,61.89,81.72,54.41,113.09
 26,Paris,"Paris, France", France,84.68,47.6,67.13,73.77,88.11,95.38
 27,Odense,"Odense, Denmark", Denmark,84.09,23.31,55.32,65.29,112.9,114.26
-28,Berkeley,"Berkeley, CA, United States"," CA, United States",84.09,76.39,80.45,81.99,87.6,119.03
-29,Jersey City,"Jersey City, NJ, United States"," NJ, United States",84.08,61.58,73.43,86.08,81.44,120.46
+28,Berkeley,"Berkeley, United States of America"," CA, United States of America",84.09,76.39,80.45,81.99,87.6,119.03
+29,Jersey City,"Jersey City, United States of America"," NJ, United States of America",84.08,61.58,73.43,86.08,81.44,120.46
 30,Aalborg,"Aalborg, Denmark", Denmark,82.21,24.92,55.09,62.32,97.34,113.36
 31,Amsterdam,"Amsterdam, Netherlands", Netherlands,82.14,54.65,69.13,62.35,87.71,98.88
 32,Seoul,"Seoul, South Korea", South Korea,81.96,33.01,58.79,93.57,50.34,102.63
 33,Arhus,"Arhus, Denmark", Denmark,81.94,31.71,58.16,61.47,95.15,116.8
 34,London,"London, United Kingdom", United Kingdom,81.31,70.3,76.1,57.74,91.85,100.22
-35,Oakland,"Oakland, CA, United States"," CA, United States",81.18,77.14,79.27,77.54,78.55,137.74
+35,Oakland,"Oakland, United States of America"," CA, United States of America",81.18,77.14,79.27,77.54,78.55,137.74
 36,Helsinki,"Helsinki, Finland", Finland,80.6,35.69,59.34,61.31,94.99,108.83
-37,Boston,"Boston, MA, United States"," MA, United States",80.46,76.09,78.39,75.71,83.08,124.57
+37,Boston,"Boston, United States of America"," MA, United States of America",80.46,76.09,78.39,75.71,83.08,124.57
 38,Singapore,"Singapore, Singapore", Singapore,80.4,60.38,70.92,66.82,59.4,99.15
 39,Dublin,"Dublin, Ireland", Ireland,80.28,60.12,70.73,60.82,87.98,89.32
 40,Sydney,"Sydney, Australia", Australia,79.93,62.58,71.72,68.63,69.34,128.25
-41,Hartford,"Hartford, CT, United States"," CT, United States",79.85,41.58,61.73,83.41,72.82,84.71
-42,Albany,"Albany, NY, United States"," NY, United States",79.38,31.01,56.48,77.5,77.64,108.77
-43,Philadelphia,"Philadelphia, PA, United States"," PA, United States",79.25,49.35,65.1,74.58,74.75,109.34
+41,Hartford,"Hartford, United States of America"," CT, United States of America",79.85,41.58,61.73,83.41,72.82,84.71
+42,Albany,"Albany, United States of America"," NY, United States of America",79.38,31.01,56.48,77.5,77.64,108.77
+43,Philadelphia,"Philadelphia, United States of America"," PA, United States of America",79.25,49.35,65.1,74.58,74.75,109.34
 44,Tampere,"Tampere, Finland", Finland,79.04,26.21,54.03,68.46,79.47,114.89
 45,Milton Keynes,"Milton Keynes, United Kingdom", United Kingdom,78.5,34.45,57.65,71.63,78.53,93.47
 46,Grenoble,"Grenoble, France", France,78.43,23.34,52.35,73.56,72.47,108.39
-47,Irvine,"Irvine, CA, United States"," CA, United States",78.38,65.75,72.4,73.87,73.72,135.16
+47,Irvine,"Irvine, United States of America"," CA, United States of America",78.38,65.75,72.4,73.87,73.72,135.16
 48,Lyon,"Lyon, France", France,78,27.34,54.02,69.55,72.77,96.07
-49,Long Beach,"Long Beach, CA, United States"," CA, United States",77.95,55.18,67.17,74.93,77.97,128.82
+49,Long Beach,"Long Beach, United States of America"," CA, United States of America",77.95,55.18,67.17,74.93,77.97,128.82
 50,Linz,"Linz, Austria", Austria,77.8,26.66,53.59,67.39,80.73,99.34
-51,Los Angeles,"Los Angeles, CA, United States"," CA, United States",77.66,70.45,74.25,71.59,81.71,114.51
+51,Los Angeles,"Los Angeles, United States of America"," CA, United States of America",77.66,70.45,74.25,71.59,81.71,114.51
 52,Tel Aviv-Yafo,"Tel Aviv-Yafo, Israel", Israel,77.39,40.57,59.96,62.34,85.86,93.67
 53,Barrie,"Barrie, Canada", Canada,77.37,29.08,54.51,73.87,83.57,99.44
-54,Chicago,"Chicago, IL, United States"," IL, United States",77.33,55.53,67.01,70.69,78.52,133.7
+54,Chicago,"Chicago, United States of America"," IL, United States of America",77.33,55.53,67.01,70.69,78.52,133.7
 55,Stockholm,"Stockholm, Sweden", Sweden,77.23,40.18,59.69,64.74,85.51,115.83
 56,Florence,"Florence, Italy", Italy,77.21,29.07,54.42,63.1,88.19,70.47
-57,Boulder,"Boulder, CO, United States"," CO, United States",77.16,53.54,65.98,76.79,68.35,112.76
+57,Boulder,"Boulder, United States of America"," CO, United States of America",77.16,53.54,65.98,76.79,68.35,112.76
 58,The Hague (Den Haag),"The Hague (Den Haag), Netherlands", Netherlands,76.75,35.79,57.36,58.82,84.91,102.3
 59,Reading,"Reading, United Kingdom", United Kingdom,76.73,39.11,58.92,63.73,84.93,125.69
 60,Auckland,"Auckland, New Zealand", New Zealand,76.63,42.9,60.67,66.39,65.02,103.52
@@ -63,22 +63,22 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 62,Bordeaux,"Bordeaux, France", France,76.31,26.1,52.54,67.34,77.6,83.45
 63,Utrecht,"Utrecht, Netherlands", Netherlands,76.3,37.46,57.92,58.34,88.94,103.12
 64,Toulouse,"Toulouse, France", France,76.3,23.03,51.09,66.45,74.72,105.57
-65,San Jose,"San Jose, CA, United States"," CA, United States",76.28,76.61,76.43,71.1,83.14,170.91
-66,Burlington,"Burlington, VT, United States"," VT, United States",76.11,41.81,59.87,73.17,78.69,76.97
-67,Pittsburgh,"Pittsburgh, PA, United States"," PA, United States",76.04,38.23,58.15,71.89,66.74,114.28
+65,San Jose,"San Jose, United States of America"," CA, United States of America",76.28,76.61,76.43,71.1,83.14,170.91
+66,Burlington,"Burlington, United States of America"," VT, United States of America",76.11,41.81,59.87,73.17,78.69,76.97
+67,Pittsburgh,"Pittsburgh, United States of America"," PA, United States of America",76.04,38.23,58.15,71.89,66.74,114.28
 68,Nice,"Nice, France", France,75.84,29.77,54.03,69.04,84.7,112.81
-69,Miami,"Miami, FL, United States"," FL, United States",75.83,57.81,67.3,67.27,81.89,89.99
+69,Miami,"Miami, United States of America"," FL, United States of America",75.83,57.81,67.3,67.27,81.89,89.99
 70,Brussels,"Brussels, Belgium", Belgium,75.69,32.03,55.02,63.45,87.07,100.24
 71,Graz,"Graz, Austria", Austria,75.61,23.23,50.82,71.92,60.92,100.33
-72,Santa Barbara,"Santa Barbara, CA, United States"," CA, United States",75.55,68.66,72.29,67.52,91.99,124.41
-73,Sacramento,"Sacramento, CA, United States"," CA, United States",75.54,44.29,60.75,69.09,77.91,145.88
+72,Santa Barbara,"Santa Barbara, United States of America"," CA, United States of America",75.55,68.66,72.29,67.52,91.99,124.41
+73,Sacramento,"Sacramento, United States of America"," CA, United States of America",75.54,44.29,60.75,69.09,77.91,145.88
 74,Strasbourg,"Strasbourg, France", France,75.47,23.02,50.64,65.79,75.8,100.44
 75,Genoa,"Genoa, Italy", Italy,75.38,20.01,49.17,63.25,77.18,77.62
 76,Gent,"Gent, Belgium", Belgium,75.27,25.78,51.85,57.88,88.45,94.77
 77,Perth,"Perth, Australia", Australia,75.09,33.44,55.38,65.24,79.28,139.93
 78,Antwerp,"Antwerp, Belgium", Belgium,74.88,25.38,51.45,61.2,86.36,97.3
-79,Portland,"Portland, ME, United States"," ME, United States",74.81,42.4,59.47,72.45,85.71,122.77
-80,West Palm Beach,"West Palm Beach, FL, United States"," FL, United States",74.79,42.16,59.34,70.55,82.5,119.13
+79,Portland,"Portland, United States of America"," ME, United States of America",74.81,42.4,59.47,72.45,85.71,122.77
+80,West Palm Beach,"West Palm Beach, United States of America"," FL, United States of America",74.79,42.16,59.34,70.55,82.5,119.13
 81,Hong Kong,"Hong Kong, Hong Kong", Hong Kong,74.73,78.33,76.44,74.88,54.05,76.49
 82,Innsbruck,"Innsbruck, Austria", Austria,74.66,30.67,53.84,61.87,71.5,95.54
 83,Leuven,"Leuven, Belgium", Belgium,74.58,28.04,52.55,59.51,80.36,96.92
@@ -86,78 +86,78 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 85,Osaka,"Osaka, Japan", Japan,74.53,22.37,49.84,68.32,46.37,102.1
 86,Melbourne,"Melbourne, Australia", Australia,74.53,42.73,59.48,67.1,70.76,131.85
 87,Bath,"Bath, United Kingdom", United Kingdom,74.48,34.6,55.6,61.79,81.23,125.99
-88,Everett,"Everett, WA, United States"," WA, United States",74.36,43.44,59.72,72.61,73.78,119.38
+88,Everett,"Everett, United States of America"," WA, United States of America",74.36,43.44,59.72,72.61,73.78,119.38
 89,Saskatoon,"Saskatoon, Canada", Canada,74.26,26.16,51.49,72.37,65.25,103.89
-90,Tacoma,"Tacoma, WA, United States"," WA, United States",74.21,38.62,57.36,71.42,71.47,130.05
-91,Portland,"Portland, OR, United States"," OR, United States",74.17,50.67,63.05,69.19,71.6,126.03
+90,Tacoma,"Tacoma, United States of America"," WA, United States of America",74.21,38.62,57.36,71.42,71.47,130.05
+91,Portland,"Portland, United States of America"," OR, United States of America",74.17,50.67,63.05,69.19,71.6,126.03
 92,Rotterdam,"Rotterdam, Netherlands", Netherlands,74.08,33.42,54.83,53.99,81.15,111.02
 93,Montpellier,"Montpellier, France", France,74.08,24.82,50.76,62.71,70.81,94.37
-94,St. John's,"St. John's, NL, Canada"," NL, Canada",74.05,21.8,49.32,70.28,81.11,96.78
+94,St. John's,"St. John's, Canada"," NL, Canada",74.05,21.8,49.32,70.28,81.11,96.78
 95,Milan,"Milan, Italy", Italy,73.89,39.56,57.63,59.19,84.57,74.87
 96,Maastricht,"Maastricht, Netherlands", Netherlands,73.87,32.1,54.1,59.93,72.83,104.75
-97,Baltimore,"Baltimore, MD, United States"," MD, United States",73.85,42.89,59.2,68.71,77.01,127.77
+97,Baltimore,"Baltimore, United States of America"," MD, United States of America",73.85,42.89,59.2,68.71,77.01,127.77
 98,Munich,"Munich, Germany", Germany,73.79,45.18,60.25,56.28,80.5,114.57
 99,Espoo,"Espoo, Finland", Finland,73.78,31.47,53.75,58.58,90.89,121.22
-100,New Orleans,"New Orleans, LA, United States"," LA, United States",73.61,41.21,58.27,67,86.02,106.74
+100,New Orleans,"New Orleans, United States of America"," LA, United States of America",73.61,41.21,58.27,67,86.02,106.74
 101,Galway,"Galway, Ireland", Ireland,73.54,34.02,54.83,61.77,75.27,94.56
 102,Cork,"Cork, Ireland", Ireland,73.53,37.58,56.51,57.77,74.67,109.85
 103,Padova,"Padova, Italy", Italy,73.49,21.74,48.99,60.51,72.3,80.96
 104,Haifa,"Haifa, Israel", Israel,73.42,19.47,47.88,55.23,86.23,100.6
-105,Charlotte,"Charlotte, NC, United States"," NC, United States",73.33,41.65,58.33,69.21,76.67,142.25
+105,Charlotte,"Charlotte, United States of America"," NC, United States of America",73.33,41.65,58.33,69.21,76.67,142.25
 106,Burlington,"Burlington, Canada", Canada,73.13,32.42,53.86,64.86,72.71,119.67
 107,Aberdeen,"Aberdeen, United Kingdom", United Kingdom,73.02,27.95,51.69,57.21,90.52,128.24
 108,Dusseldorf,"Dusseldorf, Germany", Germany,73,32.84,53.99,53.33,67.2,115.58
-109,Minneapolis,"Minneapolis, MN, United States"," MN, United States",72.93,46.18,60.27,68.29,75.64,133.75
+109,Minneapolis,"Minneapolis, United States of America"," MN, United States of America",72.93,46.18,60.27,68.29,75.64,133.75
 110,Adelaide,"Adelaide, Australia", Australia,72.92,31.99,53.54,67.23,68.26,127.17
 111,Eindhoven,"Eindhoven, Netherlands", Netherlands,72.82,34.1,54.49,56.19,83.88,121.84
 112,Cambridge,"Cambridge, United Kingdom", United Kingdom,72.6,43.84,58.99,54.62,86.14,106.28
 113,Oxford,"Oxford, United Kingdom", United Kingdom,72.6,48.82,61.34,51.41,77.46,87.88
 114,Darwin,"Darwin, Australia", Australia,72.47,35.59,55.01,64.71,78.11,122.21
-115,Eugene,"Eugene, OR, United States"," OR, United States",72.46,30.44,52.57,78.36,67.68,99.5
+115,Eugene,"Eugene, United States of America"," OR, United States of America",72.46,30.44,52.57,78.36,67.68,99.5
 116,Nantes,"Nantes, France", France,72.37,21.78,48.42,62.75,71.65,104.62
 117,Groningen,"Groningen, Netherlands", Netherlands,72.29,28.84,51.72,58.44,81.94,96.13
-118,San Diego,"San Diego, CA, United States"," CA, United States",72.29,61.06,66.97,64.11,79.21,144.91
+118,San Diego,"San Diego, United States of America"," CA, United States of America",72.29,61.06,66.97,64.11,79.21,144.91
 119,Ramat Gan,"Ramat Gan, Israel", Israel,72.15,33.39,53.8,54.27,79.83,112.68
 120,Hamburg,"Hamburg, Germany", Germany,72.15,35.25,54.68,54.35,70.09,113.28
-121,Bellingham,"Bellingham, WA, United States"," WA, United States",72.14,34.17,54.17,68.93,71.96,114.33
-122,Atlanta,"Atlanta, GA, United States"," GA, United States",72.05,46.89,60.14,66.94,73.06,150.38
-123,Denver,"Denver, CO, United States"," CO, United States",72.02,54.09,63.53,67.92,76.9,130.34
-124,Saint Paul,"Saint Paul, MN, United States"," MN, United States",71.94,45.24,59.3,70.22,74.59,111.58
+121,Bellingham,"Bellingham, United States of America"," WA, United States of America",72.14,34.17,54.17,68.93,71.96,114.33
+122,Atlanta,"Atlanta, United States of America"," GA, United States of America",72.05,46.89,60.14,66.94,73.06,150.38
+123,Denver,"Denver, United States of America"," CO, United States of America",72.02,54.09,63.53,67.92,76.9,130.34
+124,Saint Paul,"Saint Paul, United States of America"," MN, United States of America",71.94,45.24,59.3,70.22,74.59,111.58
 125,Hamilton,"Hamilton, New Zealand", New Zealand,71.91,23.11,48.81,61.23,71.79,114.79
-126,Birmingham,"Birmingham, AL, United States"," AL, United States",71.87,34.03,53.96,69.4,69.34,107.87
+126,Birmingham,"Birmingham, United States of America"," AL, United States of America",71.87,34.03,53.96,69.4,69.34,107.87
 127,Frankfurt,"Frankfurt, Germany", Germany,71.64,34.99,54.29,53.12,74.5,132.91
 128,Wellington,"Wellington, New Zealand", New Zealand,71.52,39.68,56.45,63.85,64.54,116.39
-129,Asheville,"Asheville, NC, United States"," NC, United States",71.52,37.19,55.27,71.47,70.69,104.81
+129,Asheville,"Asheville, United States of America"," NC, United States of America",71.52,37.19,55.27,71.47,70.69,104.81
 130,Trieste,"Trieste, Italy", Italy,71.51,19.64,46.96,64.67,71.2,91.24
-131,Fort Myers,"Fort Myers, FL, United States"," FL, United States",71.5,33.45,53.49,68.78,77.88,104.54
+131,Fort Myers,"Fort Myers, United States of America"," FL, United States of America",71.5,33.45,53.49,68.78,77.88,104.54
 132,Newcastle,"Newcastle, Australia", Australia,71.42,37.63,55.43,63.56,79.19,142.12
 133,Portsmouth,"Portsmouth, United Kingdom", United Kingdom,71.04,31.44,52.29,51.81,87.08,107.73
 134,Halifax,"Halifax, Canada", Canada,70.88,28.05,50.6,72.43,61.05,99.86
 135,Vienna,"Vienna, Austria", Austria,70.86,32.48,52.7,63.61,67.94,104.56
 136,Heidelberg,"Heidelberg, Germany", Germany,70.82,33.51,53.16,53.85,66.51,135.3
-137,Indianapolis,"Indianapolis, IN, United States"," IN, United States",70.79,34.81,53.76,67.2,71.87,109.93
+137,Indianapolis,"Indianapolis, United States of America"," IN, United States of America",70.79,34.81,53.76,67.2,71.87,109.93
 138,Edinburgh,"Edinburgh, United Kingdom", United Kingdom,70.73,33.44,53.08,58.75,80.86,110.16
-139,Jacksonville,"Jacksonville, FL, United States"," FL, United States",70.62,31.36,52.04,69,67.63,132.56
-140,Buffalo,"Buffalo, NY, United States"," NY, United States",70.59,29.3,51.04,62.31,72.75,111.16
-141,Olympia,"Olympia, WA, United States"," WA, United States",70.57,40.4,56.28,60.02,78.68,135.82
-142,Saint Petersburg,"Saint Petersburg, FL, United States"," FL, United States",70.49,40.59,56.33,66.03,72.96,127.77
-143,Austin,"Austin, TX, United States"," TX, United States",70.49,50.35,60.96,65.81,78.34,151.25
+139,Jacksonville,"Jacksonville, United States of America"," FL, United States of America",70.62,31.36,52.04,69,67.63,132.56
+140,Buffalo,"Buffalo, United States of America"," NY, United States of America",70.59,29.3,51.04,62.31,72.75,111.16
+141,Olympia,"Olympia, United States of America"," WA, United States of America",70.57,40.4,56.28,60.02,78.68,135.82
+142,Saint Petersburg,"Saint Petersburg, United States of America"," FL, United States of America",70.49,40.59,56.33,66.03,72.96,127.77
+143,Austin,"Austin, United States of America"," TX, United States of America",70.49,50.35,60.96,65.81,78.34,151.25
 144,Brisbane,"Brisbane, Australia", Australia,70.46,39.13,55.63,60.45,69.33,134.54
 145,Male,"Male, Maldives", Maldives,70.45,31.96,52.23,71.79,39.36,28.32
 146,Sliema,"Sliema, Malta", Malta,70.33,35.72,53.94,55.05,82.28,70.43
-147,Rochester,"Rochester, NY, United States"," NY, United States",70.25,30.81,51.58,69.88,71.98,91.12
+147,Rochester,"Rochester, United States of America"," NY, United States of America",70.25,30.81,51.58,69.88,71.98,91.12
 148,Christchurch,"Christchurch, New Zealand", New Zealand,70.23,26.28,49.42,61,70.54,111.52
 149,Toronto,"Toronto, Canada", Canada,70.19,44.28,57.92,64.15,67.53,99.45
-150,Orlando,"Orlando, FL, United States"," FL, United States",70.18,38.43,55.15,68.5,69.67,130.1
+150,Orlando,"Orlando, United States of America"," FL, United States of America",70.18,38.43,55.15,68.5,69.67,130.1
 151,Dunedin,"Dunedin, New Zealand", New Zealand,70.16,21.81,47.27,60.78,64.07,112.89
 152,Turku,"Turku, Finland", Finland,70.13,22.11,47.4,53.18,81.05,126.99
 153,Plymouth,"Plymouth, United Kingdom", United Kingdom,70.02,20.31,46.49,58.63,71.32,111.9
 154,Swindon,"Swindon, United Kingdom", United Kingdom,69.92,29.46,50.77,49.5,81.79,128.46
 155,Canberra,"Canberra, Australia", Australia,69.88,40.63,56.03,63.26,70.06,153.77
 156,Manchester,"Manchester, United Kingdom", United Kingdom,69.86,30.37,51.17,52.69,80.84,107.7
-157,Peoria,"Peoria, IL, United States"," IL, United States",69.84,25.55,48.88,68.44,63.92,118.14
+157,Peoria,"Peoria, United States of America"," IL, United States of America",69.84,25.55,48.88,68.44,63.92,118.14
 158,Gothenburg,"Gothenburg, Sweden", Sweden,69.77,29.33,50.62,60.31,75.49,122.33
-159,Cleveland,"Cleveland, OH, United States"," OH, United States",69.65,28.24,50.05,62.06,69.68,105.12
+159,Cleveland,"Cleveland, United States of America"," OH, United States of America",69.65,28.24,50.05,62.06,69.68,105.12
 160,Vancouver,"Vancouver, Canada", Canada,69.63,49.26,59.98,66.65,67.35,94.65
 161,Limerick,"Limerick, Ireland", Ireland,69.63,28.14,49.99,60.78,67.61,98.85
 162,Bristol,"Bristol, United Kingdom", United Kingdom,69.58,36.53,53.93,52.44,87.3,117.2
@@ -165,134 +165,134 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 164,Bologna,"Bologna, Italy", Italy,69.5,24.03,47.98,54.96,78.34,85.6
 165,York,"York, United Kingdom", United Kingdom,69.33,28.87,50.18,55.98,78.14,113.55
 166,Karlsruhe,"Karlsruhe, Germany", Germany,69.26,21.71,46.75,52.43,74.86,161.95
-167,Raleigh,"Raleigh, NC, United States"," NC, United States",69.18,36.18,53.56,71.88,66.4,155.96
+167,Raleigh,"Raleigh, United States of America"," NC, United States of America",69.18,36.18,53.56,71.88,66.4,155.96
 168,Bonn,"Bonn, Germany", Germany,69.14,27.28,49.32,52.2,67.8,112.56
 169,Hobart,"Hobart, Australia", Australia,69.1,27.95,49.62,64.66,76.92,124.03
-170,Arlington,"Arlington, TX, United States"," TX, United States",69.07,30.98,51.04,64.58,62.75,141.64
+170,Arlington,"Arlington, United States of America"," TX, United States of America",69.07,30.98,51.04,64.58,62.75,141.64
 171,Rome,"Rome, Italy", Italy,69.03,36.69,53.72,55.28,78.14,72.99
-172,Saint Louis,"Saint Louis, MO, United States"," MO, United States",69.02,29.42,50.28,65.14,71.31,149.05
+172,Saint Louis,"Saint Louis, United States of America"," MO, United States of America",69.02,29.42,50.28,65.14,71.31,149.05
 173,Bremen,"Bremen, Germany", Germany,68.93,21.86,46.65,53.13,67.53,126.88
 174,Calgary,"Calgary, Canada", Canada,68.93,29.85,50.43,60.75,71.93,138.51
-175,Milwaukee,"Milwaukee, WI, United States"," WI, United States",68.81,35.57,53.07,63.74,71.41,107.87
+175,Milwaukee,"Milwaukee, United States of America"," WI, United States of America",68.81,35.57,53.07,63.74,71.41,107.87
 176,Brampton,"Brampton, Canada", Canada,68.79,28.91,49.91,68.6,58.42,99.86
-177,Nashville,"Nashville, TN, United States"," TN, United States",68.78,49.17,59.5,64.1,76.79,136.29
+177,Nashville,"Nashville, United States of America"," TN, United States of America",68.78,49.17,59.5,64.1,76.79,136.29
 178,Uppsala,"Uppsala, Sweden", Sweden,68.75,25.43,48.24,58.12,76.33,122.17
-179,Tampa,"Tampa, FL, United States"," FL, United States",68.61,39.54,54.85,65.38,72.99,140.97
+179,Tampa,"Tampa, United States of America"," FL, United States of America",68.61,39.54,54.85,65.38,72.99,140.97
 180,Regina,"Regina, Canada", Canada,68.46,28,49.31,66.75,59.29,112.05
 181,Mannheim,"Mannheim, Germany", Germany,68.35,22.17,46.49,52,66.93,141.04
 182,Leeds,"Leeds, United Kingdom", United Kingdom,68.26,28.05,49.23,53.36,80.41,119.62
-183,Virginia Beach,"Virginia Beach, VA, United States"," VA, United States",67.86,35.84,52.7,62.06,71.73,161.28
+183,Virginia Beach,"Virginia Beach, United States of America"," VA, United States of America",67.86,35.84,52.7,62.06,71.73,161.28
 184,Berlin,"Berlin, Germany", Germany,67.75,31.64,50.65,52.31,58.53,112.36
 185,Lille,"Lille, France", France,67.73,22.98,46.55,52.7,66.87,97.87
-186,Syracuse,"Syracuse, NY, United States"," NY, United States",67.55,33.6,51.48,63.81,68.6,94.96
+186,Syracuse,"Syracuse, United States of America"," NY, United States of America",67.55,33.6,51.48,63.81,68.6,94.96
 187,Stuttgart,"Stuttgart, Germany", Germany,67.46,33.3,51.29,49.06,64.14,130.11
 188,Coquitlam,"Coquitlam, Canada", Canada,67.43,35.02,52.09,66.05,58.84,124.45
 189,Red Deer,"Red Deer, Canada", Canada,67.42,23.58,46.66,55.68,65.18,140.16
 190,Cologne,"Cologne, Germany", Germany,67.36,29.64,49.51,51.53,66.42,133.27
 191,Aachen,"Aachen, Germany", Germany,67.33,22.76,46.23,52.03,59.44,134.85
-192,Tallahassee,"Tallahassee, FL, United States"," FL, United States",67.24,26.47,47.94,71.3,59.97,128.82
-193,Bakersfield,"Bakersfield, CA, United States"," CA, United States",67.11,28.95,49.05,63.16,70.58,151.58
-194,Ann Arbor,"Ann Arbor, MI, United States"," MI, United States",67.06,47.59,57.84,60.7,58.5,128.99
+192,Tallahassee,"Tallahassee, United States of America"," FL, United States of America",67.24,26.47,47.94,71.3,59.97,128.82
+193,Bakersfield,"Bakersfield, United States of America"," CA, United States of America",67.11,28.95,49.05,63.16,70.58,151.58
+194,Ann Arbor,"Ann Arbor, United States of America"," MI, United States of America",67.06,47.59,57.84,60.7,58.5,128.99
 195,Nottingham,"Nottingham, United Kingdom", United Kingdom,67.05,23.63,46.5,54.03,66.6,106.22
 196,Edmonton,"Edmonton, Canada", Canada,67.03,29.22,49.13,60.51,69.57,129.45
-197,Las Vegas,"Las Vegas, NV, United States"," NV, United States",66.98,29.55,49.27,59.56,72.2,144.4
-198,Columbus,"Columbus, OH, United States"," OH, United States",66.9,36.92,52.71,58.94,66.04,128.77
+197,Las Vegas,"Las Vegas, United States of America"," NV, United States of America",66.98,29.55,49.27,59.56,72.2,144.4
+198,Columbus,"Columbus, United States of America"," OH, United States of America",66.9,36.92,52.71,58.94,66.04,128.77
 199,Turin,"Turin, Italy", Italy,66.68,20.97,45.04,52.98,72.24,86.7
-200,Spokane,"Spokane, WA, United States"," WA, United States",66.6,28.33,48.49,59.19,68.65,124.45
+200,Spokane,"Spokane, United States of America"," WA, United States of America",66.6,28.33,48.49,59.19,68.65,124.45
 201,Kelowna,"Kelowna, Canada", Canada,66.6,33.08,50.73,62.58,61.82,108.98
 202,Exeter,"Exeter, United Kingdom", United Kingdom,66.56,29.55,49.04,48.27,78.62,87.24
 203,Glasgow,"Glasgow, United Kingdom", United Kingdom,66.5,27.49,48.04,51.88,75.35,121.47
-204,Memphis,"Memphis, TN, United States"," TN, United States",66.49,26.58,47.6,59.36,70.42,125.07
+204,Memphis,"Memphis, United States of America"," TN, United States of America",66.49,26.58,47.6,59.36,70.42,125.07
 205,Kingston,"Kingston, Canada", Canada,66.45,26.88,47.72,64.5,60.41,113.98
 206,Nuremberg,"Nuremberg, Germany", Germany,66.44,24.08,46.39,50.1,66.17,120.91
 207,Coventry,"Coventry, United Kingdom", United Kingdom,66.31,26.92,47.66,52.61,68.35,138.99
-208,Columbia,"Columbia, SC, United States"," SC, United States",66.23,27.73,48.01,65.6,67.08,124.84
+208,Columbia,"Columbia, United States of America"," SC, United States of America",66.23,27.73,48.01,65.6,67.08,124.84
 209,Victoria,"Victoria, Canada", Canada,66.17,38.1,52.88,65.05,59.95,106.89
 210,Malmo,"Malmo, Sweden", Sweden,66.14,26.09,47.18,56.6,72.21,107.14
-211,Salem,"Salem, OR, United States"," OR, United States",66.04,28.93,48.48,61.63,63.28,125.24
+211,Salem,"Salem, United States of America"," OR, United States of America",66.04,28.93,48.48,61.63,63.28,125.24
 212,Leipzig,"Leipzig, Germany", Germany,66.04,19.98,44.24,50.44,57.36,90.74
 213,Dresden,"Dresden, Germany", Germany,65.92,21.68,44.98,50.52,56.77,131.77
-214,Fort Wayne,"Fort Wayne, IN, United States"," IN, United States",65.88,21.74,44.98,70.07,63.82,124.37
-215,Dayton,"Dayton, OH, United States"," OH, United States",65.84,21.97,45.07,62.6,64.97,91.21
+214,Fort Wayne,"Fort Wayne, United States of America"," IN, United States of America",65.88,21.74,44.98,70.07,63.82,124.37
+215,Dayton,"Dayton, United States of America"," OH, United States of America",65.84,21.97,45.07,62.6,64.97,91.21
 216,San Juan,"San Juan, Puerto Rico", Puerto Rico,65.79,24.43,46.21,59.19,56.46,110.36
 217,Taipei,"Taipei, Taiwan", Taiwan,65.75,22.74,45.39,73.78,32.95,95.59
-218,Kansas City,"Kansas City, MO, United States"," MO, United States",65.74,30.53,49.07,58.43,68.12,138.6
+218,Kansas City,"Kansas City, United States of America"," MO, United States of America",65.74,30.53,49.07,58.43,68.12,138.6
 219,Leicester,"Leicester, United Kingdom", United Kingdom,65.59,22.41,45.15,51.01,71.76,107.34
 220,Oshawa,"Oshawa, Canada", Canada,65.44,27.37,47.42,55.97,68.51,119.92
-221,Nanaimo,"Nanaimo, BC, Canada"," BC, Canada",65.28,24.29,45.88,68.45,58.51,100.45
-222,Fort Worth,"Fort Worth, TX, United States"," TX, United States",65.19,35.53,51.15,56.86,70.27,140.43
+221,Nanaimo,"Nanaimo, Canada"," BC, Canada",65.28,24.29,45.88,68.45,58.51,100.45
+222,Fort Worth,"Fort Worth, United States of America"," TX, United States of America",65.19,35.53,51.15,56.86,70.27,140.43
 223,Palma de Mallorca,"Palma de Mallorca, Spain", Spain,65.17,27.12,47.16,50.72,66.04,78.81
 224,Mississauga,"Mississauga, Canada", Canada,65.08,35.79,51.22,58.39,60.01,112.72
 225,Quebec City,"Quebec City, Canada", Canada,65.07,16.1,41.89,62.78,60.07,140.18
 226,Norwich,"Norwich, United Kingdom", United Kingdom,64.95,23.69,45.42,48.98,76.45,92.06
 227,Burnaby,"Burnaby, Canada", Canada,64.94,40.95,53.59,58.52,59.61,151.02
-228,Fayetteville,"Fayetteville, AR, United States"," AR, United States",64.84,25.9,46.41,61.15,67.22,109.58
+228,Fayetteville,"Fayetteville, United States of America"," AR, United States of America",64.84,25.9,46.41,61.15,67.22,109.58
 229,Naples,"Naples, Italy", Italy,64.82,18.34,42.82,56.22,59.15,68.8
 230,Derby,"Derby, United Kingdom", United Kingdom,64.7,19.76,43.43,51.11,67.14,146.98
 231,Marseille,"Marseille, France", France,64.64,23.63,45.23,54.31,63.64,92.65
 232,Kingston,"Kingston, Jamaica", Jamaica,64.59,15.89,41.54,64.91,41.79,29.03
 233,Hanover,"Hanover, Germany", Germany,64.57,22.82,44.8,53.06,60,152.96
-234,Richmond,"Richmond, VA, United States"," VA, United States",64.56,35.24,50.68,63.54,62.47,132.62
+234,Richmond,"Richmond, United States of America"," VA, United States of America",64.56,35.24,50.68,63.54,62.47,132.62
 235,Gold Coast,"Gold Coast, Australia", Australia,64.53,37.37,51.68,59.94,64.12,129.83
-236,Greensboro,"Greensboro, NC, United States"," NC, United States",64.46,27.34,46.89,63.03,61.8,133.53
+236,Greensboro,"Greensboro, United States of America"," NC, United States of America",64.46,27.34,46.89,63.03,61.8,133.53
 237,Birmingham,"Birmingham, United Kingdom", United Kingdom,64.46,30.5,48.38,48.03,80.25,106.94
 238,Windsor,"Windsor, Canada", Canada,64.42,21.98,44.33,51.65,68.38,109.87
-239,Dallas,"Dallas, TX, United States"," TX, United States",64.32,43.15,54.3,58.5,68.02,153.42
-240,Albuquerque,"Albuquerque, NM, United States"," NM, United States",64.32,27.29,46.79,64.42,63.21,128.27
-241,Phoenix,"Phoenix, AZ, United States"," AZ, United States",64.31,33.65,49.79,56.58,72.47,146.15
+239,Dallas,"Dallas, United States of America"," TX, United States of America",64.32,43.15,54.3,58.5,68.02,153.42
+240,Albuquerque,"Albuquerque, United States of America"," NM, United States of America",64.32,27.29,46.79,64.42,63.21,128.27
+241,Phoenix,"Phoenix, United States of America"," AZ, United States of America",64.31,33.65,49.79,56.58,72.47,146.15
 242,Southampton,"Southampton, United Kingdom", United Kingdom,63.73,31.44,48.45,48.32,70.79,139.02
-243,Gainesville,"Gainesville, FL, United States"," FL, United States",63.62,29.02,47.24,60.52,58.47,106.34
+243,Gainesville,"Gainesville, United States of America"," FL, United States of America",63.62,29.02,47.24,60.52,58.47,106.34
 244,Montreal,"Montreal, Canada", Canada,63.52,25.25,45.4,60.69,61.07,117.12
-245,Grand Rapids,"Grand Rapids, MI, United States"," MI, United States",63.47,31.04,48.12,55.26,71.44,129.66
-246,Tucson,"Tucson, AZ, United States"," AZ, United States",63.35,23.63,44.55,52.48,63.98,122.68
-247,Madison,"Madison, WI, United States"," WI, United States",63.3,37.52,51.09,56.66,65.73,144.61
-248,Chattanooga,"Chattanooga, TN, United States"," TN, United States",63.28,29.58,47.33,57.19,60.41,124.02
-249,Fresno,"Fresno, CA, United States"," CA, United States",63.25,30.12,47.57,54.68,76.08,120.12
-250,Wichita,"Wichita, KS, United States"," KS, United States",63.18,23.45,44.38,57.3,64.33,135.99
+245,Grand Rapids,"Grand Rapids, United States of America"," MI, United States of America",63.47,31.04,48.12,55.26,71.44,129.66
+246,Tucson,"Tucson, United States of America"," AZ, United States of America",63.35,23.63,44.55,52.48,63.98,122.68
+247,Madison,"Madison, United States of America"," WI, United States of America",63.3,37.52,51.09,56.66,65.73,144.61
+248,Chattanooga,"Chattanooga, United States of America"," TN, United States of America",63.28,29.58,47.33,57.19,60.41,124.02
+249,Fresno,"Fresno, United States of America"," CA, United States of America",63.25,30.12,47.57,54.68,76.08,120.12
+250,Wichita,"Wichita, United States of America"," KS, United States of America",63.18,23.45,44.38,57.3,64.33,135.99
 251,Winnipeg,"Winnipeg, Canada", Canada,63.15,23.7,44.48,57.33,58.5,115.79
 252,Cagliari,"Cagliari, Italy", Italy,63.15,19.23,42.36,55.09,64.01,88.55
-253,Salt Lake City,"Salt Lake City, UT, United States"," UT, United States",62.94,35.8,50.1,55.93,66.1,150.76
+253,Salt Lake City,"Salt Lake City, United States of America"," UT, United States of America",62.94,35.8,50.1,55.93,66.1,150.76
 254,Ottawa,"Ottawa, Canada", Canada,62.88,30.26,47.44,54.7,62.1,144.7
 255,Doha,"Doha, Qatar", Qatar,62.81,56.39,59.77,51.33,61.18,139.76
-256,Detroit,"Detroit, MI, United States"," MI, United States",62.77,34.22,49.25,56.21,51.65,97.41
+256,Detroit,"Detroit, United States of America"," MI, United States of America",62.77,34.22,49.25,56.21,51.65,97.41
 257,Newcastle upon Tyne,"Newcastle upon Tyne, United Kingdom", United Kingdom,62.76,22.89,43.89,45.04,70.56,133.83
-258,Tulsa,"Tulsa, OK, United States"," OK, United States",62.67,26.87,45.72,59.49,62.36,129.54
-259,Cincinnati,"Cincinnati, OH, United States"," OH, United States",62.65,31.03,47.68,52.4,63.41,137.31
+258,Tulsa,"Tulsa, United States of America"," OK, United States of America",62.67,26.87,45.72,59.49,62.36,129.54
+259,Cincinnati,"Cincinnati, United States of America"," OH, United States of America",62.65,31.03,47.68,52.4,63.41,137.31
 260,Sheffield,"Sheffield, United Kingdom", United Kingdom,62.64,23,43.88,49.09,71.97,119.46
 261,Belfast,"Belfast, United Kingdom", United Kingdom,62.42,22.62,43.58,50.78,77.19,100.69
-262,Lubbock,"Lubbock, TX, United States"," TX, United States",62.4,24.28,44.35,56.8,64.34,135.19
+262,Lubbock,"Lubbock, United States of America"," TX, United States of America",62.4,24.28,44.35,56.8,64.34,135.19
 263,Taichung,"Taichung, Taiwan", Taiwan,62.23,13.02,38.94,72.88,28.17,65.41
-264,Des Moines,"Des Moines, IA, United States"," IA, United States",62.21,33.57,48.66,57.09,63.36,128.68
-265,Houston,"Houston, TX, United States"," TX, United States",62.16,43.11,53.14,54.36,72.49,155.88
+264,Des Moines,"Des Moines, United States of America"," IA, United States of America",62.21,33.57,48.66,57.09,63.36,128.68
+265,Houston,"Houston, United States of America"," TX, United States of America",62.16,43.11,53.14,54.36,72.49,155.88
 266,Barcelona,"Barcelona, Spain", Spain,62.15,32.44,48.09,48.06,60.42,80.46
 267,Cardiff,"Cardiff, United Kingdom", United Kingdom,62.12,28.79,46.34,52.3,67.16,116.48
 268,Liverpool,"Liverpool, United Kingdom", United Kingdom,62,24.72,44.35,44.7,67.48,121.31
 269,Abu Dhabi,"Abu Dhabi, United Arab Emirates", United Arab Emirates,61.94,58.43,60.28,50.11,63.2,116.42
-270,Oklahoma City,"Oklahoma City, OK, United States"," OK, United States",61.72,25.72,44.68,60.18,56.84,136.21
+270,Oklahoma City,"Oklahoma City, United States of America"," OK, United States of America",61.72,25.72,44.68,60.18,56.84,136.21
 271,Palermo,"Palermo, Italy", Italy,61.16,16.75,40.14,50.93,59.39,80.13
 272,Moncton,"Moncton, Canada", Canada,61.15,17.69,40.58,54.08,60.71,112.73
 273,Nicosia,"Nicosia, Cyprus", Cyprus,60.97,17.72,40.5,46.7,70.81,74.05
-274,Knoxville,"Knoxville, TN, United States"," TN, United States",60.97,28.75,45.72,59.45,59.43,116.61
+274,Knoxville,"Knoxville, TN, United States of America"," TN, United States of America",60.97,28.75,45.72,59.45,59.43,116.61
 275,Beirut,"Beirut, Lebanon", Lebanon,60.79,32.31,47.31,42.01,64.39,54.43
 276,Hamilton,"Hamilton, Canada", Canada,60.75,26.34,44.46,53.08,62.2,127.16
-277,Springfield,"Springfield, MO, United States"," MO, United States",60.56,18.66,40.73,60.68,61.21,102.88
-278,Vancouver,"Vancouver, WA, United States"," WA, United States",60.46,35.97,48.87,50.54,61.81,153.07
+277,Springfield,"Springfield, United States of America"," MO, United States of America",60.56,18.66,40.73,60.68,61.21,102.88
+278,Vancouver,"Vancouver, United States of America"," WA, United States of America",60.46,35.97,48.87,50.54,61.81,153.07
 279,Athens,"Athens, Greece", Greece,60.44,12.73,37.85,44.92,62.38,52.48
-280,Toledo,"Toledo, OH, United States"," OH, United States",60.35,21.26,41.84,50.89,55.69,125.57
-281,Little Rock,"Little Rock, AR, United States"," AR, United States",60.31,26.4,44.26,55.44,63.52,144.07
-282,Louisville,"Louisville, KY, United States"," KY, United States",60.24,26.86,44.44,53.87,66.45,123.93
+280,Toledo,"Toledo, United States of America"," OH, United States of America",60.35,21.26,41.84,50.89,55.69,125.57
+281,Little Rock,"Little Rock, United States of America"," AR, United States of America",60.31,26.4,44.26,55.44,63.52,144.07
+282,Louisville,"Louisville, United States of America"," KY, United States of America",60.24,26.86,44.44,53.87,66.45,123.93
 283,Madrid,"Madrid, Spain", Spain,60.12,31.59,46.62,45.69,64.44,91.36
-284,Reno,"Reno, NV, United States"," NV, United States",59.84,38.03,49.51,51.96,62.27,136.81
-285,Huntsville,"Huntsville, AL, United States"," AL, United States",59.8,28.65,45.06,58.83,60.2,162.04
-286,Lexington,"Lexington, KY, United States"," KY, United States",59.64,24.86,43.17,54.5,60.08,141.91
+284,Reno,"Reno, United States of America"," NV, United States of America",59.84,38.03,49.51,51.96,62.27,136.81
+285,Huntsville,"Huntsville, United States of America"," AL, United States of America",59.8,28.65,45.06,58.83,60.2,162.04
+286,Lexington,"Lexington, United States of America"," KY, United States of America",59.64,24.86,43.17,54.5,60.08,141.91
 287,Port of Spain,"Port of Spain, Trinidad And Tobago", Trinidad And Tobago,59.6,19.73,40.73,55.83,53.74,51.2
-288,Boise,"Boise, ID, United States"," ID, United States",59.43,30.85,45.9,50.93,63.79,120.44
-289,El Paso,"El Paso, TX, United States"," TX, United States",59.37,22.16,41.76,54.07,59.41,131.7
+288,Boise,"Boise, United States of America"," ID, United States of America",59.43,30.85,45.9,50.93,63.79,120.44
+289,El Paso,"El Paso, United States of America"," TX, United States of America",59.37,22.16,41.76,54.07,59.41,131.7
 290,Surrey,"Surrey, Canada", Canada,59.18,30.36,45.54,51.61,57.55,93.91
 291,London,"London, Canada", Canada,59.15,23.08,42.08,47.61,63.25,118.79
 292,Abbotsford,"Abbotsford, Canada", Canada,58.95,25.01,42.89,54.08,59.78,111.27
 293,Kitchener,"Kitchener, Canada", Canada,58.93,25.38,43.05,51.13,58.73,129.74
-294,San Antonio,"San Antonio, TX, United States"," TX, United States",58.12,31.26,45.41,55.2,52.09,150.96
+294,San Antonio,"San Antonio, United States of America"," TX, United States of America",58.12,31.26,45.41,55.2,52.09,150.96
 295,Montevideo,"Montevideo, Uruguay", Uruguay,58.05,17.98,39.09,44.97,56.33,50.08
 296,Zaragoza (Saragossa),"Zaragoza (Saragossa), Spain", Spain,58,18.18,39.15,45.42,55.82,83.22
 297,Thessaloniki,"Thessaloniki, Greece", Greece,57.97,11.28,35.86,43.49,58.35,49.84
@@ -505,7 +505,7 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 504,Bangalore,"Bangalore, India", India,26.83,8.6,18.2,26.53,18.7,96.51
 505,Kharkiv,"Kharkiv, Ukraine", Ukraine,26.71,8.8,18.23,19.4,21.91,31.62
 506,Tunis,"Tunis, Tunisia", Tunisia,26.53,6.83,17.21,24.26,15.87,35.51
-507,Pristina,"Pristina, Kosovo (Disputed Territory)", Kosovo (Disputed Territory),26.24,8.36,17.78,22.23,21.1,68.94
+507,Pristina,"Pristina, Kosovo", Kosovo (Disputed Territory),26.24,8.36,17.78,22.23,21.1,68.94
 508,Chandigarh,"Chandigarh, India", India,26,5.7,16.39,25.46,19.17,64.37
 509,Islamabad,"Islamabad, Pakistan", Pakistan,25.86,7.48,17.16,23.37,19.2,50.11
 510,Lahore,"Lahore, Pakistan", Pakistan,25.83,5.27,16.1,22.76,23.12,39.75
@@ -533,5 +533,4 @@ Rank,City,City_country,Country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Pl
 532,Vadodara,"Vadodara, India", India,22.28,3.78,13.52,22.26,14.43,74.59
 533,Kochi,"Kochi, India", India,21.73,5.45,14.02,21.93,12.2,73.42
 534,Visakhapatnam,"Visakhapatnam, India", India,21.52,4.26,13.35,21.09,17.09,55.47
-535,Navi Mumbai,"Navi Mumbai, India", India,19.3,4.7,12.39,19.21,12.55,138.06
-536,Thiruvananthapuram,"Thiruvananthapuram, India", India,19.26,4.69,12.36,18.14,11.93,68.15
+535,Thiruvananthapuram,"Thiruvananthapuram, India", India,19.26,4.69,12.36,18.14,11.93,68.15
