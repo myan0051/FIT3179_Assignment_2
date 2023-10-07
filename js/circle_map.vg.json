@@ -9,7 +9,7 @@
       "value": 2019,
       "bind": {
         "input": "range",
-        "min": 2010,
+        "min": 2009,
         "max": 2023,
         "step": 1,
         "name": "Year:  "
