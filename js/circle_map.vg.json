@@ -3,6 +3,45 @@
   "width": 1000,
   "height": 550,
   "title": "Cost of living Index of Cities across the world 2023",
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2023,
+        "step": 1,
+        "name": "Year:  "
+      }
+    },
+    {
+      "name": "zoom_level",
+      "value": 30000,
+      "bind": {
+        "input": "range",
+        "min": 3500,
+        "max": 60000,
+        "step": 100,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [145, -37.95],
+      "bind": {
+        "input": "select",
+        "options": [
+          [145, -37.95],
+          [144.3, -38.1],
+          [144.9, -36.7],
+          [147.1, -38.1]
+        ],
+        "labels": ["Melbourne CBD", "Geelong", "Bendigo", "Sale"],
+        "name": "Map Centre: "
+      }
+    }
+  ],
   "projection": {"type": "equalEarth"},
   "layer": [
     {
@@ -29,7 +68,7 @@
 
     {
       "data": {
-          "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index.csv"
+          "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index_v2.csv"
         },
       "transform": [
           {
@@ -41,7 +80,8 @@
               "key": "city_country_topo",
               "fields": ["lat","lng"]
             }
-          }
+          },
+          {"filter": "datum.Year == Year_selection"}
         ],
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
