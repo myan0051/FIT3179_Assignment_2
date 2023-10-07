@@ -1,4 +1,4 @@
-﻿Year,Rank,City_old,City_country,Cost of Living Index,Rent Index,Cost of Living Plus Rent Index,Groceries Index,Restaurant Price Index,Local Purchasing Power Index
+﻿Year,Rank,City_old,City_country,Cost_of_Living_Index,Rent_Index,Cost_of_Living_Plus_Rent_Index,Groceries_Index,Restaurant_Price_Index,Local_Purchasing_Power_Index
 2009,1,"Paris, France","Paris, France",127.8,96.4,115.4,117,116.5,39.4
 2009,2,"Dublin, Ireland","Dublin, Ireland",126.6,87.6,111.1,154.5,131.6,59.3
 2009,3,"Brussels, Belgium","Brussels, Belgium",117.5,78.8,102.2,110.9,107.6,55.6
