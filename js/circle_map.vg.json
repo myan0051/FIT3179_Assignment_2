@@ -3,30 +3,6 @@
   "width": 1000,
   "height": 550,
   "title": "Cost of living Index of Cities across the world 2023",
-  "params": [
-    {
-      "name": "Year_selection",
-      "value": 2018,
-      "bind": {
-        "input": "range",
-        "min": 2009,
-        "max": 2023,
-        "step": 1,
-        "name": "Year:  "
-      }
-    },
-    {
-      "name": "zoom_level",
-      "value": 30000,
-      "bind": {
-        "input": "range",
-        "min": 3500,
-        "max": 60000,
-        "step": 100,
-        "name": "Zoom: "
-      }
-    }
-  ],
   "projection": {"type": "equalEarth"},
   "layer": [
     {
@@ -53,7 +29,7 @@
 
     {
       "data": {
-          "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_v3.csv"
+          "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index.csv"
         },
       "transform": [
           {
@@ -65,8 +41,7 @@
               "key": "city_country_topo",
               "fields": ["lat","lng"]
             }
-          },
-          {"filter": "datum.Year == Year_selection"}
+          }
         ],
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
