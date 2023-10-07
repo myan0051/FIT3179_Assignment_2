@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1200,
-  "height": 650,
+  "width": 1000,
+  "height": 550,
   "title": "Cost of living Index of Cities across the world 2023",
   "projection": {"type": "equalEarth"},
   "layer": [
