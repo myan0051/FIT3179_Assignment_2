@@ -14,11 +14,18 @@
 <body>
   
 <div id="circle_map"></div>
+<div id="circle_map2"></div>
 
 <script type="text/javascript">
 
   var spec2 = "js/circle_map.vg.json";
   vegaEmbed('#circle_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+  var spec3 = "js/scrollable_map_visualization.vg.json";
+  vegaEmbed('#circle_map2', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
