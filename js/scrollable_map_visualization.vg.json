@@ -182,6 +182,21 @@
         },
         "hover": {"fill": {"value": "red"}}
       }
+    },
+    
+    {
+      "type": "text",
+      "from": {"data": "cost_of_living"},
+      "interactive": false,
+      "encode": 
+      {
+        "update": {
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "text": [
+            {"test": "inrange(datum.Rank, [0,1])",
+            "field": "City_old"}]}
+      }
     }
   ],
   "config": {}
