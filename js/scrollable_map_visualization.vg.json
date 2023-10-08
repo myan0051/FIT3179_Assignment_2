@@ -3,7 +3,6 @@
   "description": "An interactive world map supporting pan and zoom.",
   "width": 900,
   "height": 500,
-  "title": "Cost of living Index of Cities across the world (2009 - 2023)",
   "autosize": "none",
   "signals": [
     {"name": "tx", "update": "width / 2"},
@@ -115,7 +114,7 @@
       "name": "size",
       "domain": {"data": "cost_of_living", "field": "Cost_of_Living_Index"},
       "zero": true,
-      "range": [-30, 400]
+      "range": [0, 400]
     },
     {
       "name": "color",
@@ -135,7 +134,8 @@
       "fill": "color",
       "formatType": "number",
       "clipHeight": 16,
-      "labelOffset" : 200
+      "labelAlign" : "center",
+      "labelOffset" : 10
     }
   ],
 
@@ -199,5 +199,6 @@
       }
     }
   ],
+  
   "config": {}
 }
