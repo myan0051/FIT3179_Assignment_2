@@ -55,7 +55,7 @@
     },
     {
       "name": "rotateX",
-      "value": 0,
+      "value": 1,
       "on": [{"events": {"signal": "delta"}, "update": "angles[0] + delta[0]"}]
     },
     {
@@ -115,7 +115,7 @@
       "name": "size",
       "domain": {"data": "cost_of_living", "field": "Cost_of_Living_Index"},
       "zero": true,
-      "range": [-30, 350]
+      "range": [-30, 400]
     },
     {
       "name": "color",
@@ -173,14 +173,14 @@
         "enter": {
           "size": [{"scale": "size", "field": "Cost_of_Living_Index"}],
           "tooltip": {"signal": "{title: datum.City_old, 'Cost of Living Index': datum.Cost_of_Living_Index,'Rank' : datum.Rank}"},
-          "fillOpacity": {"value": 0.8}
+          "fillOpacity": {"value": 0.7}
         },
         "update": {
           "x": {"field": "x"},
           "y": {"field": "y"},
           "fill": [{"scale": "color", "field": "Cost_of_Living_Index"}]
         },
-        "hover": {"fill": {"value": "RED"}}
+        "hover": {"fill": {"value": "red"}}
       }
     }
   ],
