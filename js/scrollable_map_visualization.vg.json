@@ -1,0 +1,184 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An interactive world map supporting pan and zoom.",
+  "width": 900,
+  "height": 500,
+  "autosize": "none",
+  "signals": [
+    {"name": "tx", "update": "width / 2"},
+    {"name": "ty", "update": "height / 2"},
+    {
+      "name": "scale",
+      "value": 225,
+      "on": [
+        {
+          "events": {"type": "wheel", "consume": true},
+          "update": "clamp(scale * pow(1.001, -event.deltaY * pow(16, event.deltaMode)), 150, 3000)"
+        }
+      ]
+    },
+    {
+      "name": "angles",
+      "value": [0, 0],
+      "on": [{"events": "mousedown", "update": "[rotateX, centerY]"}]
+    },
+    {
+      "name": "cloned",
+      "value": null,
+      "on": [{"events": "mousedown", "update": "copy('projection')"}]
+    },
+    {
+      "name": "start",
+      "value": null,
+      "on": [{"events": "mousedown", "update": "invert(cloned, xy())"}]
+    },
+    {
+      "name": "drag",
+      "value": null,
+      "on": [
+        {
+          "events": "[mousedown, window:mouseup] > window:mousemove",
+          "update": "invert(cloned, xy())"
+        }
+      ]
+    },
+    {
+      "name": "delta",
+      "value": null,
+      "on": [
+        {
+          "events": {"signal": "drag"},
+          "update": "[drag[0] - start[0], start[1] - drag[1]]"
+        }
+      ]
+    },
+    {
+      "name": "rotateX",
+      "value": 0,
+      "on": [{"events": {"signal": "delta"}, "update": "angles[0] + delta[0]"}]
+    },
+    {
+      "name": "centerY",
+      "value": 0,
+      "on": [
+        {
+          "events": {"signal": "delta"},
+          "update": "clamp(angles[1] + delta[1], -60, 60)"
+        }
+      ]
+    },
+    { "name": "Year", "value": 2023,
+    "bind": {"input": "range", "min": 2009, "max": 2023, "step": 1} }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "mercator",
+      "scale": {"signal": "scale"},
+      "rotate": [{"signal": "rotateX"}, 0, 0],
+      "center": [0, {"signal": "centerY"}],
+      "translate": [{"signal": "tx"}, {"signal": "ty"}]
+    }
+  ],
+  "data": [
+    {
+      "name": "world",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/ne_50m_smaller.topojson",
+      "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+    },
+    {
+      "name": "graticule",
+      "transform": [{"type": "graticule", "step": [15, 15]}]
+    },
+    {
+      "name": "worldcities",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/worldcities.csv",
+      "format": {"type": "csv", "parse": "auto"}
+    },
+    {
+      "name": "cost_of_living",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index_v2.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [
+        { "type": "lookup", "from": "worldcities", "key": "city_country_topo", "fields": ["City_country"], "values": ["lat","lng"] },
+        { "type": "filter", "expr": "datum.lat != null" },
+        { "type": "filter", "expr": "datum.Year == Year" },
+        { "type": "geopoint", "projection": "projection", "fields": ["lng","lat"]}
+      ]
+    }
+  ],
+
+  
+  "scales": [
+    {
+      "name": "size",
+      "domain": {"data": "cost_of_living", "field": "Cost_of_Living_Index"},
+      "zero": true,
+      "range": [-30, 350]
+    },
+    {
+      "name": "color",
+      "type": "linear",
+      "nice": true,
+      "domain": [23, 105],
+      "range": {"scheme": "plasma"}
+    }
+  ],
+
+  "legends": [
+    {
+      "title": "Cost of Living Index",
+      "orient": "bottom-right",
+      "type": "symbol",
+      "size": "size",
+      "fill": "color",
+      "formatType": "number",
+      "clipHeight": 16
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "shape",
+      "from": {"data": "graticule"},
+      "encode": {
+        "enter": {
+          "strokeWidth": {"value": 1},
+          "stroke": {"value": "#ddd"},
+          "fill": {"value": null}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    
+    {
+      "type": "shape",
+      "from": {"data": "world"},
+      "encode": {
+        "enter": {
+          "strokeWidth": {"value": 0.5},
+          "stroke": {"value": "#bbb"},
+          "fill": {"value": "#e5e8d3"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+
+    {
+      "type": "symbol",
+      "from": {"data": "cost_of_living"},
+      "encode": {
+        "enter": {
+          "size": [{"scale": "size", "field": "Cost_of_Living_Index"}],
+          "fill": [{"scale": "color", "field": "Cost_of_Living_Index"}],
+          "fillOpacity": {"value": 0.8}
+        },
+        "update": {
+          "x": {"field": "x"},
+          "y": {"field": "y"}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
