@@ -18,12 +18,13 @@
     "color": {
       "field": "Spending Category",
       "type": "nominal",
-      "scale": {"scheme": "set1"},
+      "scale": {"scheme": "plasma"},
       "legend": {
         "orient": "right",
         "offset": 10,
         "labelOffset": 3,
         "titlePadding": 5,
+        "symbolSize": 900,
         "titleFontSize": 0
       }
     },
