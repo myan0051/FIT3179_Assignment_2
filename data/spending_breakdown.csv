@@ -1,101 +1,101 @@
 ﻿Spending Category,P,S,id,row,col
-Housing,33,1,1,1,-9
-Housing,33,2,2,1,-8
-Housing,33,3,3,1,-7
-Housing,33,4,4,1,-6
-Housing,33,5,5,1,-5
-Housing,33,6,6,1,-4
-Housing,33,7,7,1,-3
-Housing,33,8,8,1,-2
-Housing,33,9,9,1,-1
-Housing,33,10,10,1,0
-Housing,33,11,11,10,-9
-Housing,33,12,12,10,-8
-Housing,33,13,13,10,-7
-Housing,33,14,14,10,-6
-Housing,33,15,15,10,-5
-Housing,33,16,16,10,-4
-Housing,33,17,17,10,-3
-Housing,33,18,18,10,-2
-Housing,33,19,19,10,-1
-Housing,33,20,20,10,0
-Housing,33,21,21,2,-9
-Housing,33,22,22,2,-8
-Housing,33,23,23,2,-7
-Housing,33,24,24,2,-6
-Housing,33,25,25,2,-5
-Housing,33,26,26,2,-4
-Housing,33,27,27,2,-3
-Housing,33,28,28,2,-2
-Housing,33,29,29,2,-1
-Housing,33,30,30,2,0
-Housing,33,31,31,3,-9
-Housing,33,32,32,3,-8
-Housing,33,33,33,3,0
-Healthcare and pensions,20,34,34,3,-6
-Healthcare and pensions,20,35,35,3,-5
-Healthcare and pensions,20,36,36,3,-4
-Healthcare and pensions,20,37,37,3,-3
-Healthcare and pensions,20,38,38,3,-2
-Healthcare and pensions,20,39,39,3,-1
-Healthcare and pensions,20,40,40,3,-7
-Healthcare and pensions,20,41,41,4,-9
-Healthcare and pensions,20,42,42,4,-8
-Healthcare and pensions,20,43,43,4,-7
-Healthcare and pensions,20,44,44,4,-6
-Healthcare and pensions,20,45,45,4,-5
-Healthcare and pensions,20,46,46,4,-4
-Healthcare and pensions,20,47,47,4,-3
-Healthcare and pensions,20,48,48,4,-2
-Healthcare and pensions,20,49,49,4,-1
-Healthcare and pensions,20,50,50,4,0
-Healthcare and pensions,20,51,51,5,-9
-Healthcare and pensions,20,52,52,5,-8
-Healthcare and pensions,20,53,53,5,0
-Transport,17,54,54,5,-6
-Transport,17,55,55,5,-5
-Transport,17,56,56,5,-4
-Transport,17,57,57,5,-3
-Transport,17,58,58,5,-2
-Transport,17,59,59,5,-1
-Transport,17,60,60,5,-7
-Transport,17,61,61,6,-9
-Transport,17,62,62,6,-8
-Transport,17,63,63,6,-7
-Transport,17,1,64,6,-6
-Transport,17,2,65,6,-5
-Transport,17,3,66,6,-4
-Transport,17,4,67,6,-3
-Transport,17,5,68,6,-2
-Transport,17,6,69,6,-1
-Transport,17,7,70,6,0
-Miscellaneous,16,8,71,7,-9
-Miscellaneous,16,9,72,7,-8
-Miscellaneous,16,10,73,7,-7
-Miscellaneous,16,11,74,7,-6
-Miscellaneous,16,12,75,7,-5
-Miscellaneous,16,13,76,7,-4
-Miscellaneous,16,14,77,7,-3
-Miscellaneous,16,15,78,7,-2
-Miscellaneous,16,16,79,7,-1
-Miscellaneous,16,17,80,7,0
-Food,14,18,81,8,-9
-Food,14,19,82,8,-8
-Food,14,2,83,8,-7
-Miscellaneous,16,8,90,8,-6
-Miscellaneous,16,3,85,8,-5
-Miscellaneous,16,4,86,8,-4
-Miscellaneous,16,5,87,8,-3
-Miscellaneous,16,6,88,8,-2
-Miscellaneous,16,7,89,8,-1
-Food,14,2,84,8,0
-Food,14,9,91,9,-9
-Food,14,10,92,9,-8
-Food,14,11,93,9,-7
-Food,14,12,94,9,-6
-Food,14,13,95,9,-5
-Food,14,14,96,9,-4
-Food,14,15,97,9,-3
-Food,14,16,98,9,-2
-Food,14,17,99,9,-1
-Food,14,18,100,9,0
+33% Housing,33,1,1,1,-9
+33% Housing,33,2,2,1,-8
+33% Housing,33,3,3,1,-7
+33% Housing,33,4,4,1,-6
+33% Housing,33,5,5,1,-5
+33% Housing,33,6,6,1,-4
+33% Housing,33,7,7,1,-3
+33% Housing,33,8,8,1,-2
+33% Housing,33,9,9,1,-1
+33% Housing,33,10,10,1,0
+33% Housing,33,11,11,10,-9
+33% Housing,33,12,12,10,-8
+33% Housing,33,13,13,10,-7
+33% Housing,33,14,14,10,-6
+33% Housing,33,15,15,10,-5
+33% Housing,33,16,16,10,-4
+33% Housing,33,17,17,10,-3
+33% Housing,33,18,18,10,-2
+33% Housing,33,19,19,10,-1
+33% Housing,33,20,20,10,0
+33% Housing,33,21,21,2,-9
+33% Housing,33,22,22,2,-8
+33% Housing,33,23,23,2,-7
+33% Housing,33,24,24,2,-6
+33% Housing,33,25,25,2,-5
+33% Housing,33,26,26,2,-4
+33% Housing,33,27,27,2,-3
+33% Housing,33,28,28,2,-2
+33% Housing,33,29,29,2,-1
+33% Housing,33,30,30,2,0
+33% Housing,33,31,31,3,-9
+33% Housing,33,32,32,3,-8
+33% Housing,33,33,33,3,0
+20% Healthcare and pensions,20,34,34,3,-6
+20% Healthcare and pensions,20,35,35,3,-5
+20% Healthcare and pensions,20,36,36,3,-4
+20% Healthcare and pensions,20,37,37,3,-3
+20% Healthcare and pensions,20,38,38,3,-2
+20% Healthcare and pensions,20,39,39,3,-1
+20% Healthcare and pensions,20,40,40,3,-7
+20% Healthcare and pensions,20,41,41,4,-9
+20% Healthcare and pensions,20,42,42,4,-8
+20% Healthcare and pensions,20,43,43,4,-7
+20% Healthcare and pensions,20,44,44,4,-6
+20% Healthcare and pensions,20,45,45,4,-5
+20% Healthcare and pensions,20,46,46,4,-4
+20% Healthcare and pensions,20,47,47,4,-3
+20% Healthcare and pensions,20,48,48,4,-2
+20% Healthcare and pensions,20,49,49,4,-1
+20% Healthcare and pensions,20,50,50,4,0
+20% Healthcare and pensions,20,51,51,5,-9
+20% Healthcare and pensions,20,52,52,5,-8
+20% Healthcare and pensions,20,53,53,5,0
+17% Transport,17,54,54,5,-6
+17% Transport,17,55,55,5,-5
+17% Transport,17,56,56,5,-4
+17% Transport,17,57,57,5,-3
+17% Transport,17,58,58,5,-2
+17% Transport,17,59,59,5,-1
+17% Transport,17,60,60,5,-7
+17% Transport,17,61,61,6,-9
+17% Transport,17,62,62,6,-8
+17% Transport,17,63,63,6,-7
+17% Transport,17,1,64,6,-6
+17% Transport,17,2,65,6,-5
+17% Transport,17,3,66,6,-4
+17% Transport,17,4,67,6,-3
+17% Transport,17,5,68,6,-2
+17% Transport,17,6,69,6,-1
+17% Transport,17,7,70,6,0
+16% Miscellaneous,16,8,71,7,-9
+16% Miscellaneous,16,9,72,7,-8
+16% Miscellaneous,16,10,73,7,-7
+16% Miscellaneous,16,11,74,7,-6
+16% Miscellaneous,16,12,75,7,-5
+16% Miscellaneous,16,13,76,7,-4
+16% Miscellaneous,16,14,77,7,-3
+16% Miscellaneous,16,15,78,7,-2
+16% Miscellaneous,16,16,79,7,-1
+16% Miscellaneous,16,17,80,7,0
+14% Food,14,18,81,8,-9
+14% Food,14,19,82,8,-8
+14% Food,14,2,83,8,-7
+16% Miscellaneous,16,8,90,8,-6
+16% Miscellaneous,16,3,85,8,-5
+16% Miscellaneous,16,4,86,8,-4
+16% Miscellaneous,16,5,87,8,-3
+16% Miscellaneous,16,6,88,8,-2
+16% Miscellaneous,16,7,89,8,-1
+14% Food,14,2,84,8,0
+14% Food,14,9,91,9,-9
+14% Food,14,10,92,9,-8
+14% Food,14,11,93,9,-7
+14% Food,14,12,94,9,-6
+14% Food,14,13,95,9,-5
+14% Food,14,14,96,9,-4
+14% Food,14,15,97,9,-3
+14% Food,14,16,98,9,-2
+14% Food,14,17,99,9,-1
+14% Food,14,18,100,9,0
