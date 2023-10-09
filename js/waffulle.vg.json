@@ -1,33 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "data/cars.json"},
-  "transform": [
-    {
-      "joinaggregate": [{"op": "count", "field": "Origin", "as": "TotalOrigin"}]
-    },
-    {
-      "joinaggregate": [
-        {"op": "count", "field": "Origin", "as": "TotalOriginGrouped"}
-      ],
-      "groupby": ["Origin"]
-    },
-    {
-      "calculate": "round(datum.TotalOriginGrouped/datum.TotalOrigin * 100)",
-      "as": "PercentOfTotal"
-    },
-    {
-      "aggregate": [{"op": "min", "field": "PercentOfTotal", "as": "P"}],
-      "groupby": ["Origin"]
-    },
-    {"calculate": "sequence(1,datum.P+1)", "as": "S"},
-    {"flatten": ["S"]},
-    {
-      "window": [{"op": "row_number", "as": "id"}],
-      "sort": [{"field": "Origin", "order": "descending"}]
-    },
-    {"calculate": "ceil (datum.id / 10)", "as": "row"},
-    {"calculate": "datum.id - datum.row * 10", "as": "col"}
-  ],
+  "data": {"url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/spending_breakdown.csv"},
+
   "mark": {
     "type": "circle",
     "filled": true,
