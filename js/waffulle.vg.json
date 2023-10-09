@@ -25,7 +25,8 @@
       }
     },
     "size": {"value": 241},
-    "tooltip": [{"field": "Origin", "type": "nominal"}]
+    "tooltip": [{"field": "Origin", "type": "nominal"},
+                {"field": "P", "type": "quantitative"}]
   },
   
   
