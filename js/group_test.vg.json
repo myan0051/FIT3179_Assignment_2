@@ -1,83 +1,338 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "width": 200,
-    "height": 200,
-    "padding": 5,
-    "autosize": "none",
-  
-    "signals": [
-      { "name": "clip", "value": false, "bind": {"input": "checkbox"} },
-      { "name": "foreground", "value": false, "bind": {"input": "checkbox"} },
-      { "name": "x", "value": 25,
-        "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
-      { "name": "y", "value": 25,
-        "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
-      { "name": "w", "value": 150,
-        "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
-      { "name": "h", "value": 150,
-        "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
-      { "name": "cornerRadius", "value": 0,
-        "bind": {"input": "range", "min": 0, "max": 50, "step": 1} },
-      { "name": "strokeWidth", "value": 4,
-        "bind": {"input": "range", "min": 0, "max": 10} },
-      { "name": "color", "value": "both",
-        "bind": {"input": "radio", "options": ["fill", "stroke", "both"]} }
-    ],
-  
-    "marks": [
-      {
-        "type": "group",
-        "encode": {
-          "update": {
-            "x": {"signal": "x"},
-            "y": {"signal": "y"},
-            "width": {"signal": "w"},
-            "height": {"signal": "h"},
-            "clip": {"signal": "clip"},
-            "opacity": {"value": 1},
-            "cornerRadius": {"signal": "cornerRadius"},
-            "strokeWidth": {"signal": "strokeWidth"},
-            "strokeForeground": {"signal": "foreground"},
-            "fill": {"signal": "color !== 'stroke' ? '#939597' : null"},
-            "stroke": {"signal": "color !== 'fill' ? '#652c90' : null"}
-          },
-          "hover": {
-            "opacity": {"value": 0.5}
-          }
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 1480,
+  "height": 1200,
+  "data": [
+    {
+      "name": "click_store",
+      "values": [
+        {
+          "unit": "concat_1",
+          "fields": [{"type": "E", "field": "Rank"}],
+          "values": ["1"]
+        }
+      ]
+    },
+    {
+      "name": "arcc",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/long_cost_of_living.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!length(data(\"click_store\")) || vlSelectionTest(\"click_store\", datum)"
         },
-  
-        "data": [
-          {
-            "name": "table",
-            "values": [
-              {"x":  5, "y": 5, "w": 100, "h": 30},
-              {"x": -5, "y": 70, "w": 40, "h": 40},
-              {"x": 60, "y": 120, "w": 100, "h": 20}
-            ]
-          }
-        ],
-  
-        "marks": [
-          {
-            "type": "rect",
-            "from": {"data": "table"},
-            "encode": {
-              "enter": {
-                "x": {"field": "x"},
-                "y": {"field": "y"},
-                "width": {"field": "w"},
-                "height": {"field": "h"},
-                "stroke": {"value": "firebrick"}
+        {
+          "type": "stack",
+          "groupby": [],
+          "field": "Value",
+          "sort": {"field": ["Attribute"], "order": ["ascending"]},
+          "as": ["Value_start", "Value_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+        }
+      ]
+    },
+    {
+      "name": "scatter",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index_v2.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {"type": "filter", "expr": "datum.Year == 2023"},
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Rank\"]) && isFinite(+datum[\"Rank\"]) && isValid(datum[\"Cost_of_Living_Index\"]) && isFinite(+datum[\"Cost_of_Living_Index\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {"name": "cx", "update": "width / 2"},
+    {"name": "cy", "value": "450"},
+    {
+      "name": "gravityX",
+      "value": 0.2,
+      "bind": {"input": "range", "min": 0, "max": 1}
+    },
+    {
+      "name": "gravityY",
+      "value": 0.1,
+      "bind": {"input": "range", "min": 0, "max": 1}
+    },
+    {"name": "concat_0_height", "value": 560},
+    {"name": "concat_1_height", "value": 60},
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "mousemove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "click",
+      "update": "vlSelectionResolve(\"click_store\", \"union\", true, true)"
+    }
+  ],
+  "layout": {"padding": 20, "columns": 1, "bounds": "full", "align": "each"},
+  "marks": [
+    {
+      "type": "group",
+      "name": "concat_0_group",
+      "style": "view",
+      "encode": {
+        "update": {
+          "width": {"signal": "width"},
+          "height": {"signal": "concat_0_height"}
+        }
+      },
+      "scales": [
+    {
+      "name": "size",
+      "domain": {"data": "arcc", "field": "Value"},
+      "range": [1, 3]
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "arcc", "field": "Attribute"},
+      "range": "ramp"
+    }
+  ],
+      "marks": [
+        {
+          "name": "concat_0_marks",
+          "type": "symbol",
+          "style": ["arc"],
+          "interactive": false,
+          "from": {"data": "arcc"},
+
+        "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "Attribute"},
+          "xfocus": {"signal": "cx"},
+          "yfocus": {"signal": "cy"}
+        },
+        "update": {
+          "size": {"signal": "pow(2 * datum.Value, 2)", "scale": "size"},
+          "stroke": {"value": "white"},
+          "strokeWidth": {"value": 1},
+          "tooltip": {"signal": "datum"}
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "iterations": 100,
+          "static": false,
+          "forces": [
+            {
+              "force": "collide",
+              "iterations": 2,
+              "radius": {"expr": "sqrt(datum.size) / 2"}
+            },
+            {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
+            {"force": "x", "x": "xfocus", "strength": {"signal": "gravityX"}},
+            {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}
+          ]
+        }
+      ]
+        }
+      ],
+      
+      "legends": [
+        {"fill": "concat_0_color", "symbolType": "circle", "title": "Attribute"}
+      ]
+    },
+    {
+      "type": "group",
+      "name": "concat_1_group",
+      "style": "cell",
+      "encode": {
+        "update": {
+          "width": {"signal": "width"},
+          "height": {"signal": "concat_1_height"}
+        }
+      },
+      "signals": [
+        {
+          "name": "click_tuple",
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "click"}],
+              "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"concat_1\", fields: click_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Rank\"]]} : null",
+              "force": false
+            },
+            {
+              "events": [{"source": "view", "type": "dblclick"}],
+              "update": "null"
+            }
+          ]
+        },
+        {
+          "name": "click_tuple_fields",
+          "value": [{"type": "E", "field": "Rank"}]
+        },
+        {
+          "name": "click_toggle",
+          "value": false,
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "click"}],
+              "update": "event.shiftKey"
+            },
+            {
+              "events": [{"source": "view", "type": "dblclick"}],
+              "update": "false"
+            }
+          ]
+        },
+        {
+          "name": "click_modify",
+          "on": [
+            {
+              "events": {"signal": "click_tuple"},
+              "update": "modify(\"click_store\", click_toggle ? null : click_tuple, click_toggle ? null : true, click_toggle ? click_tuple : null)"
+            }
+          ]
+        }
+      ],
+      "marks": [
+        {
+          "name": "concat_1_marks",
+          "type": "symbol",
+          "style": ["circle"],
+          "interactable" : "false",
+          "from": {"data": "scatter"},
+          "encode": {
+            "update": {
+              "opacity": {"value": 0.7},
+              "fill": {
+                "scale": "concat_1_color",
+                "field": "Cost_of_Living_Index"
               },
-              "update": {
-                "fill": {"value": "aliceblue"}
+              "ariaRoleDescription": {"value": "circle"},
+              "description": {
+                "signal": "\"Rank: \" + (format(datum[\"Rank\"], \"\")) + \"; Cost_of_Living_Index: \" + (format(datum[\"Cost_of_Living_Index\"], \"\")) + \"; Cost of Living Index: \" + (format(datum[\"Cost_of_Living_Index\"], \"\"))"
               },
-              "hover": {
-                "fill": {"value": "salmon"}
-              }
+              "x": {"scale": "concat_1_x", "field": "Rank"},
+              "y": {"scale": "concat_1_y", "field": "Cost_of_Living_Index"},
+              "size": {"scale": "size", "field": "Cost_of_Living_Index"},
+              "shape": {"value": "circle"}
             }
           }
-        ]
+        }
+      ],
+      "axes": [
+        {
+          "scale": "concat_1_x",
+          "orient": "bottom",
+          "gridScale": "concat_1_y",
+          "grid": true,
+          "tickCount": {"signal": "ceil(width/40)"},
+          "domain": false,
+          "labels": false,
+          "aria": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "ticks": false,
+          "zindex": 0
+        },
+        {
+          "scale": "concat_1_x",
+          "orient": "bottom",
+          "grid": false,
+          "title": "Rank",
+          "labelFlush": true,
+          "labelOverlap": true,
+          "tickCount": {"signal": "ceil(width/40)"},
+          "zindex": 0
+        },
+        {
+          "scale": "concat_1_y",
+          "orient": "left",
+          "grid": false,
+          "title": "Cost_of_Living_Index",
+          "tickCount": 3,
+          "labelOverlap": true,
+          "zindex": 0
+        }
+      ],
+      "legends": [
+        {
+          "title": "Cost of Living Index",
+          "fill": "concat_1_color",
+          "gradientLength": {"signal": "clamp(concat_1_height, 64, 200)"},
+          "encode": {"gradient": {"update": {"opacity": {"value": 0.7}}}}
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": [23, 105],
+      "range": [9, 361],
+      "zero": false
+    },
+    {
+      "name": "concat_0_theta",
+      "type": "linear",
+      "domain": {"data": "arcc", "fields": ["Value_start", "Value_end"]},
+      "range": [0, 6.283185307179586],
+      "zero": true
+    },
+    {
+      "name": "concat_0_color",
+      "type": "ordinal",
+      "domain": {"data": "arcc", "field": "Attribute", "sort": true},
+      "range": "category"
+    },
+    {
+      "name": "concat_1_x",
+      "type": "linear",
+      "domain": {"data": "scatter", "field": "Rank"},
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "concat_1_y",
+      "type": "linear",
+      "domain": {"data": "scatter", "field": "Cost_of_Living_Index"},
+      "range": [{"signal": "concat_1_height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "concat_1_color",
+      "type": "linear",
+      "domain": [23, 105],
+      "range": {"scheme": "plasma"},
+      "interpolate": "hcl",
+      "zero": false
+    }
+  ],
+  "legends": [
+    {
+      "size": "size",
+      "symbolType": "circle",
+      "title": "Cost_of_Living_Index",
+      "encode": {
+        "symbols": {
+          "update": {
+            "fill": {"value": "black"},
+            "fillOpacity": {"value": 0.7},
+            "opacity": {"value": 0.7},
+            "stroke": {"value": "transparent"}
+          }
+        }
       }
-    ]
-  }
+    }
+  ]
+}
