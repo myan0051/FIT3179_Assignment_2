@@ -24,6 +24,7 @@
           "type": "filter",
           "expr": "!length(data(\"click_store\")) || vlSelectionTest(\"click_store\", datum)"
         },
+        {"type": "filter", "expr": "datum.Value < ValueBar"},
         {
           "type": "stack",
           "groupby": [],
@@ -44,6 +45,7 @@
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {"type": "filter", "expr": "datum.Year == 2023"},
+        {"type": "filter", "expr": "datum.Rank < 536"},
         {
           "type": "filter",
           "expr": "isValid(datum[\"Rank\"]) && isFinite(+datum[\"Rank\"]) && isValid(datum[\"Cost_of_Living_Index\"]) && isFinite(+datum[\"Cost_of_Living_Index\"])"
@@ -61,11 +63,16 @@
     },
     {
       "name": "gravityY",
-      "value": 0.1,
+      "value": 0.6,
       "bind": {"input": "range", "min": 0, "max": 1}
     },
+    {
+      "name": "ValueBar",
+      "value": 150,
+      "bind": {"input": "range", "min": 0, "max": 60000}
+    },
     {"name": "concat_0_height", "value": 560},
-    {"name": "concat_1_height", "value": 60},
+    {"name": "concat_1_height", "value": 160},
     {
       "name": "unit",
       "value": {},
@@ -94,35 +101,36 @@
     {
       "name": "size",
       "domain": {"data": "arcc", "field": "Value"},
-      "range": [1, 3]
+      "range": [-20, 400]
     },
     {
       "name": "color",
       "type": "ordinal",
       "domain": {"data": "arcc", "field": "Attribute"},
-      "range": "ramp"
+      "range": {"scheme": "blues"}
     }
   ],
-      "marks": [
-        {
-          "name": "concat_0_marks",
-          "type": "symbol",
-          "style": ["arc"],
-          "interactive": false,
-          "from": {"data": "arcc"},
+    "marks": [
+      {
+        "name": "concat_0_marks",
+        "type": "symbol",
+        "style": ["arc"],
+        "interactive": true,
+        "from": {"data": "arcc"},
 
-        "encode": {
-        "enter": {
-          "fill": {"scale": "color", "field": "Attribute"},
-          "xfocus": {"signal": "cx"},
-          "yfocus": {"signal": "cy"}
-        },
-        "update": {
-          "size": {"signal": "pow(2 * datum.Value, 2)", "scale": "size"},
-          "stroke": {"value": "white"},
-          "strokeWidth": {"value": 1},
-          "tooltip": {"signal": "datum"}
-        }
+      "encode": {
+      "enter": {
+
+        "fill": {"scale": "color", "field": "Attribute"},
+        "xfocus": {"signal": "cx"},
+        "yfocus": {"signal": "cy"}
+      },
+      "update": {
+        "size": {"signal": "pow(2 * datum.Value, 2)", "scale": "size"},
+        "stroke": {"value": "white"},
+        "strokeWidth": {"value": 1},
+        "tooltip": {"signal": "{title: datum.Attribute, 'Price ($USD)': datum.Value}"}
+      }
       },
       "transform": [
         {
@@ -132,20 +140,29 @@
           "forces": [
             {
               "force": "collide",
-              "iterations": 2,
+              "iterations": 5,
               "radius": {"expr": "sqrt(datum.size) / 2"}
             },
             {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
             {"force": "x", "x": "xfocus", "strength": {"signal": "gravityX"}},
-            {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}
-          ]
+            {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}]}]
+        },
+        {
+          "type": "text",
+          "interactive": false,
+          "from": {"data": "concat_0_marks"},
+          "encode": {
+            "enter": {
+              "align": {"value": "center"},
+              "baseline": {"value": "middle"},
+              "fontSize": {"value": 15},
+              "fontWeight": {"value": "bold"},
+              "fill": {"value": "white"},
+              "text": {"field": "datum.Attribute"}
+            },
+            "update": {"x": {"field": "x"}, "y": {"field": "y"}}
+          }
         }
-      ]
-        }
-      ],
-      
-      "legends": [
-        {"fill": "concat_0_color", "symbolType": "circle", "title": "Attribute"}
       ]
     },
     {
@@ -158,18 +175,23 @@
           "height": {"signal": "concat_1_height"}
         }
       },
+      "scales": [    {
+        "name": "size1",
+        "domain": {"data": "scatter", "field": "Cost_of_Living_Index"},
+        "range": [0, 1000]
+      }],
       "signals": [
         {
           "name": "click_tuple",
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
-              "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"concat_1\", fields: click_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Rank\"]]} : null",
+              "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"concat_1\", fields: click_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Rank\"]]} : 1",
               "force": false
             },
             {
               "events": [{"source": "view", "type": "dblclick"}],
-              "update": "null"
+              "update": "1"
             }
           ]
         },
@@ -211,6 +233,7 @@
           "encode": {
             "update": {
               "opacity": {"value": 0.7},
+              "tooltip": {"signal": "{title: datum.City_old, 'Cost of Living Index': datum.Cost_of_Living_Index,'Rank' : datum.Rank}"},
               "fill": {
                 "scale": "concat_1_color",
                 "field": "Cost_of_Living_Index"
@@ -221,7 +244,7 @@
               },
               "x": {"scale": "concat_1_x", "field": "Rank"},
               "y": {"scale": "concat_1_y", "field": "Cost_of_Living_Index"},
-              "size": {"scale": "size", "field": "Cost_of_Living_Index"},
+              "size": {"scale": "size1", "field": "Cost_of_Living_Index"},
               "shape": {"value": "circle"}
             }
           }
@@ -312,7 +335,7 @@
     {
       "name": "concat_1_color",
       "type": "linear",
-      "domain": [23, 105],
+      "domain": [0, 100],
       "range": {"scheme": "plasma"},
       "interpolate": "hcl",
       "zero": false

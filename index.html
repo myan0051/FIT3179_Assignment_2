@@ -15,19 +15,25 @@
   
 <div id="circle_map"></div>
 <div id="circle_map2"></div>
+<div id="circle_map3"></div>
 
 <script type="text/javascript">
 
-  var spec2 = "js/circle_map.vg.json";
-  vegaEmbed('#circle_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-
   var spec3 = "js/scrollable_map_visualization.vg.json";
-  vegaEmbed('#circle_map2', spec3).then(function(result) {
+  vegaEmbed('#circle_map', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
+  var spec4 = "js/group_test.vg.json";
+  vegaEmbed('#circle_map2', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec5 = "js/waffulle.vg.json";
+  vegaEmbed('#circle_map3', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
 </script>
 
 </body>
