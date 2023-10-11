@@ -54,7 +54,7 @@
   ],
   "signals": [
     {"name": "cx", "update": "width / 2"},
-    {"name": "cy", "value": "650"},
+    {"name": "cy", "value": "450"},
     {
       "name": "gravityX",
       "value": 0.2,
@@ -163,8 +163,9 @@
           "from": {"data": "concat_0_marks"},
           "encode": {
             "enter": {
-              "align": {"value": "center"},
-              "baseline": {"value": "middle"},
+              "align": {"value": "right"},
+              "dx": {"value": 150},
+              "baseline": {"value": "bottom"},
               "fontSize": {"value": 50},
               "fill": {"value": "black"},
               "text": {"field": "datum.City_country"}
