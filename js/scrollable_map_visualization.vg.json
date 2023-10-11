@@ -114,7 +114,7 @@
       "name": "size",
       "domain": {"data": "cost_of_living", "field": "Cost_of_Living_Index"},
       "zero": true,
-      "range": [0, 400]
+      "range": [-20, 450]
     },
     {
       "name": "color",
@@ -173,7 +173,7 @@
         "enter": {
           "size": [{"scale": "size", "field": "Cost_of_Living_Index"}],
           "tooltip": {"signal": "{title: datum.City_old, 'Cost of Living Index': datum.Cost_of_Living_Index,'Rank' : datum.Rank}"},
-          "fillOpacity": {"value": 0.7}
+          "fillOpacity": {"value": 0.6}
         },
         "update": {
           "x": {"field": "x"},
@@ -181,6 +181,7 @@
           "fill": [{"scale": "color", "field": "Cost_of_Living_Index"}]
         },
         "hover": {"fill": {"value": "red"}}
+        
       }
     },
     
