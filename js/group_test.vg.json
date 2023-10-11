@@ -151,7 +151,7 @@
               "baseline": {"value": "middle"},
               "fontSize": {"value": 15},
               "fontWeight": {"value": "bold"},
-              "fill": {"value": "white"},
+              "fill": {"value": "black"},
               "text": {"field": "datum.Attribute"}
             },
             "update": {"x": {"field": "x"}, "y": {"field": "y"}}
