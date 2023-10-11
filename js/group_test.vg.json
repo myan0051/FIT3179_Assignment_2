@@ -246,7 +246,9 @@
               "y": {"scale": "concat_1_y", "field": "Cost_of_Living_Index"},
               "size": {"scale": "size1", "field": "Cost_of_Living_Index"},
               "shape": {"value": "circle"}
-            }
+            },
+            "hover": {"fill": {"value": "red"},
+            "size":  {"value": 1500}}
           }
         }
       ],
