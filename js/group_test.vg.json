@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
-  "width": 1200,
+  "width": 1400,
   "height": 1200,
   "data": [
     {
@@ -11,7 +11,7 @@
         {
           "unit": "concat_1",
           "fields": [{"type": "E", "field": "Rank"}],
-          "values": ["86"]
+          "values": ["55"]
         }
       ]
     },
@@ -163,8 +163,8 @@
           "from": {"data": "concat_0_marks"},
           "encode": {
             "enter": {
-              "align": {"value": "right"},
-              "dx": {"value": 150},
+              "align": {"value": "center"},
+              "dx": {"value": 700},
               "baseline": {"value": "bottom"},
               "fontSize": {"value": 50},
               "fill": {"value": "black"},
