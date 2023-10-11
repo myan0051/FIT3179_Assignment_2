@@ -55,7 +55,7 @@
   ],
   "signals": [
     {"name": "cx", "update": "width / 2"},
-    {"name": "cy", "value": "450"},
+    {"name": "cy", "value": "650"},
     {
       "name": "gravityX",
       "value": 0.2,
