@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "width": 1000,
+    "height": 650,
+    "params": [
+      {
+        "name": "Year_selection",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2009,
+          "max": 2023,
+          "step": 1,
+          "name": "Year:  "
+        }
+      }
+    ],
+    "data": {"url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/Cost_of_living_index_v2.csv"},
+    "transform": [{"filter": "datum.Year == Year_selection"}],
+  
+    "layer": [{
+    "mark": "circle",
+      "encoding": {
+        "x": {"field": "Cost_of_Living_Index", "type": "quantitative"},
+        "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
+        "size": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
+        "tooltip": [{"field": "City_old", "type": "nominal" },
+        {"field": "Cost_of_Living_Index", "type": "quantitative" },
+        {"field": "Local_Purchasing_Power_Index", "type": "quantitative" }],
+        "color": {
+        "field": "Local_Purchasing_Power_Index",
+        "type": "quantitative",
+        "scale": {"scheme": "plasma"}
+      }
+        }
+    },{
+      "mark": {"type": "text", "align": "left", "x": 100},
+      "encoding": {
+        "x": {"field": "Cost_of_Living_Index", "type": "quantitative"},
+        "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
+        "text":{ "condition": {"test": "inrange(datum.Local_Purchasing_Power_Index, [167,300]) && datum.Year != 2016",
+              "field": "City_old"}}
+        }
+      }
+    ]
+  }
+  
