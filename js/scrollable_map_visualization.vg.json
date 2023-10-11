@@ -68,7 +68,9 @@
       ]
     },
     { "name": "Year", "value": 2023,
-    "bind": {"input": "range", "min": 2009, "max": 2023, "step": 1} }
+    "bind": {"input": "range", "min": 2009, "max": 2023, "step": 1} },
+    { "name": "Ranks", "value": 1,
+    "bind": {"input": "range", "min": 0, "max": 5, "step": 1} }
   ],
   "projections": [
     {
@@ -114,7 +116,7 @@
       "name": "size",
       "domain": {"data": "cost_of_living", "field": "Cost_of_Living_Index"},
       "zero": true,
-      "range": [-20, 450]
+      "range": [0, 400]
     },
     {
       "name": "color",
@@ -195,7 +197,7 @@
           "x": {"field": "x"},
           "y": {"field": "y"},
           "text": [
-            {"test": "inrange(datum.Rank, [0,1])",
+            {"test": "inrange(datum.Rank, [0,Ranks])",
             "field": "City_old"}]}
       }
     }
