@@ -346,27 +346,10 @@
     {
       "name": "concat_1_color",
       "type": "linear",
-      "domain": [0, 100],
+      "domain": [20, 140],
       "range": {"scheme": "plasma"},
       "interpolate": "hcl",
       "zero": false
-    }
-  ],
-  "legends": [
-    {
-      "size": "size",
-      "symbolType": "circle",
-      "title": "Cost_of_Living_Index",
-      "encode": {
-        "symbols": {
-          "update": {
-            "fill": {"value": "black"},
-            "fillOpacity": {"value": 0.7},
-            "opacity": {"value": 0.7},
-            "stroke": {"value": "transparent"}
-          }
-        }
-      }
     }
   ]
 }

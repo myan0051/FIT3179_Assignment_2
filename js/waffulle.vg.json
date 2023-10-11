@@ -18,7 +18,7 @@
     "color": {
       "field": "Spending Category",
       "type": "nominal",
-      "scale": {"scheme": "plasma"},
+      "scale": {"scheme": "category10"},
       "legend": {
         "orient": "right",
         "offset": 10,
@@ -29,9 +29,7 @@
       }
     },
     "size": {"value": 1200},
-    "tooltip": [{"field": "Spending Category", "type": "nominal" },
-    {"field": "row", "type": "quantitative" },
-    {"field": "col", "type": "quantitative" }]
+    "tooltip": [{"field": "Spending Category", "type": "nominal" }]
   },
   
   

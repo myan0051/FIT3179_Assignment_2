@@ -16,6 +16,7 @@
 <div id="circle_map"></div>
 <div id="circle_map2"></div>
 <div id="circle_map3"></div>
+<div id="circle_map4"></div>
 
 <script type="text/javascript">
 
@@ -31,6 +32,11 @@
 
   var spec5 = "js/waffulle.vg.json";
   vegaEmbed('#circle_map3', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec6 = "js/scatter.vg.json";
+  vegaEmbed('#circle_map4', spec6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
