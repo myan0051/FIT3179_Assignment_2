@@ -56,13 +56,11 @@
     {"name": "cy", "value": "450"},
     {
       "name": "gravityX",
-      "value": 0.36,
-      "bind": {"input": "range", "min": 0, "max": 1}
+      "value": 0.36
     },
     {
       "name": "gravityY",
-      "value": 0.59,
-      "bind": {"input": "range", "min": 0, "max": 1}
+      "value": 0.59
     },
     {"name": "concat_0_height", "value": 560},
     {"name": "concat_1_height", "value": 150},
