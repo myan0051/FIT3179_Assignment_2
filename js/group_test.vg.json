@@ -92,7 +92,7 @@
     {
       "name": "size",
       "domain": {"data": "arcc", "field": "Value"},
-      "range": [-20, 400]
+      "range": [0, 300]
     },
     {
       "name": "color",
