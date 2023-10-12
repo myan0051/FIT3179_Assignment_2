@@ -10,8 +10,8 @@
     "type": "circle",
     "filled": true,
     "tooltip": true,
-    "stroke": "black",
-    "strokeWidth": 0.7
+    "stroke": "white",
+    "strokeWidth": 1
   },
   "encoding": {
     "x": {"field": "col", "type": "ordinal", "axis": null},

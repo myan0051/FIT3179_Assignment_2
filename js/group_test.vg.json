@@ -52,7 +52,7 @@
     }
   ],
   "signals": [
-    {"name": "cx", "update": "width / 2"},
+    {"name": "cx", "update": "800"},
     {"name": "cy", "value": "450"},
     {
       "name": "gravityX",
@@ -150,7 +150,7 @@
               "baseline": {"value": "middle"},
               "fontSize": {"value": 15},
               "fontWeight": {"value": "bold"},
-              "fill": {"value": "black"},
+              "fill": {"value": "white"},
               "text": {"field": "datum.Attribute"}
             },
             "update": {"x": {"field": "x"}, "y": {"field": "y"}}
@@ -166,7 +166,7 @@
               "dx": {"value": 700},
               "baseline": {"value": "bottom"},
               "fontSize": {"value": 50},
-              "fill": {"value": "black"},
+              "fill": {"value": "white"},
               "text": {"field": "datum.City_country"}
             }
           }
