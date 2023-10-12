@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
@@ -9,34 +11,101 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <!-- MDL file -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+  <title>Global Cost of Living</title>
+
+  <style>
+    body {
+        background-size: cover;
+        background-color: #272727
+;
+    }
+  </style>
 
 </head>
-<body>
-  
-<div id="circle_map"></div>
-<div id="circle_map2"></div>
-<div id="circle_map3"></div>
-<div id="circle_map4"></div>
+<body class="body-bg">
+  <div class="container border px-0">
+    <div class="row banner mx-0 p-5 text-white align-items-center d-flex">
+      <div class="col-8 px-0">
+        <h1 class="display-6" style="font-weight: 700;">Text</h1>
+      </div>
+    </div>
+
+
+   <!-- Choropleth map -->
+ <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
+  <div>
+    <h2>TEXT</h2>
+    <div class="border mx-auto w-50 border-danger"></div>
+  </div>
+  <p class="lead mt-4 mb-1">World map 
+  <div id="map" class="mt-2 vis-container"></div>
+</div>
+
+ <!-- Bar Graph -->
+ <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
+  <div>
+    <h2>TEXT1</h2>
+    <div class="border mx-auto w-50 border-danger"></div>
+  </div>
+  <p class="lead mt-4 mb-1">same items bought in different countries</p>
+  <div id="bubbles" class="mt-2 vis-container"></div>
+</div>
+
+ <!-- Bar Graph -->
+ <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
+  <div>
+    <h2>TEXT1</h2>
+    <div class="border mx-auto w-50 border-danger"></div>
+  </div>
+  <p class="lead mt-4 mb-1">same items bought in different countries</p>
+  <div id="waffle" class="mt-2 vis-container"></div>
+</div>
+
+
+ <!-- Bar Graph -->
+ <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
+  <div>
+    <h2>TEXT1</h2>
+    <div class="border mx-auto w-50 border-danger"></div>
+  </div>
+  <p class="lead mt-4 mb-1">same items bought in different countries</p>
+  <div id="scatter" class="mt-2 vis-container"></div>
+</div>
+
+
+
+
 
 <script type="text/javascript">
 
   var spec3 = "js/scrollable_map_visualization.vg.json";
-  vegaEmbed('#circle_map', spec3).then(function(result) {
+  vegaEmbed('#map', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var spec4 = "js/group_test.vg.json";
-  vegaEmbed('#circle_map2', spec4).then(function(result) {
+  vegaEmbed('#bubbles', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var spec5 = "js/waffulle.vg.json";
-  vegaEmbed('#circle_map3', spec5).then(function(result) {
+  vegaEmbed('#waffle', spec5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var spec6 = "js/scatter.vg.json";
-  vegaEmbed('#circle_map4', spec6).then(function(result) {
+  vegaEmbed('#scatter', spec6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 

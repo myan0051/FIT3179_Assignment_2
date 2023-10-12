@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 500,
+  "background": null,
   "title" : "Spending Category",
   "data": {"url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/spending_breakdown.csv"},
 
