@@ -126,12 +126,12 @@
       "transform": [
         {
           "type": "force",
-          "iterations": 100,
+          "iterations": 25,
           "static": false,
           "forces": [
             {
               "force": "collide",
-              "iterations": 5,
+              "iterations": 3,
               "radius": {"expr": "sqrt(datum.size) / 2"}
             },
             {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
