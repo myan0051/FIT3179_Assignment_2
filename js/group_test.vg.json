@@ -16,7 +16,7 @@
     },
     {
       "name": "arcc",
-      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/bubble_long_v2.csv",
+      "url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/long_bubble_final.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {
@@ -53,7 +53,7 @@
   ],
   "signals": [
     {"name": "cx", "update": "800"},
-    {"name": "cy", "value": "450"},
+    {"name": "cy", "value": "550"},
     {
       "name": "gravityX",
       "value": 0.36

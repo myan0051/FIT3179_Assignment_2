@@ -10,79 +10,90 @@
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 
   <!-- MDL file -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" />
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
 
   <title>Global Cost of Living</title>
 
   <style>
-    body {
-        background-size: cover;
-        background-color: #272727
-;
-    }
   </style>
 
+
 </head>
-<body class="body">
-  <div>
-    <div class="row banner p-5 text-white align-items-center">
-      <div class="col-8 px-0">
-        <h1 class="display" style="font-weight: 1700;">Global Cost of Living Comparison</h1>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
       </div>
-    </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Global Cost of Living</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+    </header>
 
 
-   <!-- map -->
- <div class="mx-auto text-center justify-content-center align-items-center">
-  <div class="text-white ">
-    <h2>Cost of Living Map (2009 - 2023)</h2>
+<!-- waff -->
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Cost of Living Map (2009 - 2023)</h4>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"></div>
+
+      <div class="mdl-grid">
+        <div id="waffle" ></div>
+        <div class="mdl-cell mdl-cell--2-col">The average humans monthly spending</div>
+      </div>
   </div>
-  <p class="lead text-white">World map (mouse to move and zoom)
-  <div id="map" class="mt-2 vis-container"></div>
-</div>
+</section>
 
- <!-- bubles -->
- <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
-  <div class="text-white">
-    <h2>TEXT1</h2>
+<!-- map -->
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Cost of Living Map (2009 - 2023)</h4>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+        <div class="section__circle-container__circle mdl-color--primary"></div>
+        <p class="display-3">World map (mouse to move and zoom) </p>
+          <div id="map"></div>
+        </div>
   </div>
-  <p class="lead text-white">same items bought in different cities are represented on the bubble chart
-  </p>
-  <p class="lead text-white">(click on the line chart to change city)
-  </p>
-  <div id="bubbles" class="mt-2 vis-container"></div>
-</div>
+</section>
 
- <!-- waff -->
- <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
-  <div class="text-white">
-    <h2>TEXT1</h2>
+
+
+
+<!-- bubles -->
+
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Cost of Living Map (2009 - 2023)</h4>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+        <div class="section__circle-container__circle mdl-color--primary"></div>
+        <div id="bubbles"></div>
+        </div>
   </div>
-  <p class="lead text-white">text</p>
-  <div id="waffle" class="mt-2 vis-container"></div>
-  
-</div>
+</section>
 
 
- <!-- bar -->
- <div class="row px-4 py-4 mx-auto text-center justify-content-center align-items-center">
-  <<div class="text-white">
-    <h2>TEXT1</h2>
+
+<!-- scater -->
+
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Cost of Living Map (2009 - 2023)</h4>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+        <div class="section__circle-container__circle mdl-color--primary"></div>
+        <div id="scatter"></div>
+        </div>
   </div>
-  <p class="lead text-white">text</p>
-  <div id="scatter" class="mt-2 vis-container"></div>
-</div>
-
+</section>
 
 
 
