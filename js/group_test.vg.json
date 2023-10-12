@@ -84,8 +84,8 @@
       "style": "view",
       "encode": {
         "update": {
-          "width": {"signal": "width"},
-          "height": {"signal": "concat_0_height"}
+          "width": {"value": 1400},
+          "height": {"value": 1100}
         }
       },
       "scales": [
@@ -196,8 +196,9 @@
               "force": false
             },
             {
-              "events": [{"source": "view", "type": "dblclick"}],
-              "update": "1"
+              "events": [{"source": "scope", "type": "mouseover"}],
+              "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"concat_1\", fields: click_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Rank\"]]} : 1",
+              "force": false
             }
           ]
         },

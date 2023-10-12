@@ -36,7 +36,7 @@
       }
         }
     },{
-      "mark": {"type": "text", "align": "left", "x": 100,"color": "white"},
+      "mark": {"type": "text", "align": "left", "x": 100,"color": "black"},
       "encoding": {
         "x": {"field": "Cost_of_Living_Index", "type": "quantitative"},
         "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
