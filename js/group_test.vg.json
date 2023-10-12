@@ -118,7 +118,7 @@
       },
       "update": {
         "size": {"signal": "pow(2 * datum.Value, 2)", "scale": "size"},
-        "stroke": {"value": "white"},
+        "stroke": {"value": ""},
         "strokeWidth": {"value": 1},
         "tooltip": {"signal": "{title: datum.Attribute, 'Price ($USD)': datum.Value}"}
       }
@@ -148,7 +148,7 @@
               "baseline": {"value": "middle"},
               "fontSize": {"value": 15},
               "fontWeight": {"value": "bold"},
-              "fill": {"value": "white"},
+              "fill": {"value": "black"},
               "text": {"field": "datum.Attribute"}
             },
             "update": {"x": {"field": "x"}, "y": {"field": "y"}}
@@ -164,7 +164,7 @@
               "dx": {"value": 700},
               "baseline": {"value": "bottom"},
               "fontSize": {"value": 50},
-              "fill": {"value": "white"},
+              "fill": {"value": "black"},
               "text": {"field": "datum.City_country"}
             }
           }

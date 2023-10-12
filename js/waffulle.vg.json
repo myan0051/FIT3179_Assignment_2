@@ -29,7 +29,7 @@
         "titleFontSize": 0
       }
     },
-    "size": {"value": 1200},
+    "size": {"value": 1300},
     "tooltip": [{"field": "Spending Category", "type": "nominal" }]
   },
   
