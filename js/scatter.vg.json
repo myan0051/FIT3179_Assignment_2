@@ -23,14 +23,15 @@
     "layer": [{
     "mark": "circle",
       "encoding": {
-        "x": {"field": "Cost_of_Living_Index", "type": "quantitative"},
-        "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
+        "x": {"field": "Cost_of_Living_Index", "type": "quantitative", "title" : "Cost of Living Index (Lower = Cheaper)"},
+        "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative" , "title" : "Purchasing Power Index (Higher = Better)"},
         "size": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
-        "tooltip": [{"field": "City_old", "type": "nominal" },
-        {"field": "Cost_of_Living_Index", "type": "quantitative" },
-        {"field": "Local_Purchasing_Power_Index", "type": "quantitative" }],
+        "tooltip": [{"field": "City_old", "type": "nominal" , "title" : "City"},
+        {"field": "Cost_of_Living_Index", "type": "quantitative" , "title" : "Cost of Living Index"},
+        {"field": "Local_Purchasing_Power_Index", "type": "quantitative" , "title" : "Purchasing Power Index"}],
         "color": {
-        "field": "Local_Purchasing_Power_Index",
+        "field": "Local_Purchasing_Power_Index", 
+        "title": "Purchasing Power Index",
         "type": "quantitative",
         "scale": {"scheme": "plasma"}
       }
@@ -40,7 +41,7 @@
       "encoding": {
         "x": {"field": "Cost_of_Living_Index", "type": "quantitative"},
         "y": {"field": "Local_Purchasing_Power_Index", "type": "quantitative"},
-        "text":{ "condition": {"test": "inrange(datum.Local_Purchasing_Power_Index, [167,300]) && datum.Year != 2016",
+        "text":{ "condition": {"test": "inrange(datum.Local_Purchasing_Power_Index, [167,300]) && datum.Year != 2016 || datum.City_old == 'Melbourne, Australia'",
               "field": "City_old"}}
         }
       }

@@ -250,7 +250,7 @@
                 "signal": "\"Rank: \" + (format(datum[\"Rank\"], \"\")) + \"; Cost_of_Living_Index: \" + (format(datum[\"Cost_of_Living_Index\"], \"\")) + \"; Cost of Living Index: \" + (format(datum[\"Cost_of_Living_Index\"], \"\"))"
               },
               "x": {"scale": "concat_1_x", "field": "Rank"},
-              "y": {"scale": "concat_1_y", "field": "Cost_of_Living_Index"},
+              "y": {"scale": "concat_1_y", "field": "Cost_of_Living_Index", "title" : "Cost of Living Index"},
               "size": {"scale": "size1", "field": "Cost_of_Living_Index"},
               "shape": {"value": "circle"}
             },
@@ -278,7 +278,7 @@
           "scale": "concat_1_x",
           "orient": "bottom",
           "grid": false,
-          "title": "Rank",
+          "title": "Rank (Lower = More Expensive)",
           "labelFlush": true,
           "labelOverlap": true,
           "tickCount": {"signal": "ceil(width/40)"},
@@ -288,7 +288,7 @@
           "scale": "concat_1_y",
           "orient": "left",
           "grid": false,
-          "title": "Cost_of_Living_Index",
+          "title": "Cost of Living Index",
           "tickCount": 3,
           "labelOverlap": true,
           "zindex": 0
