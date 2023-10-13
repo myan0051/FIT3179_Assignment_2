@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "An interactive world map supporting pan and zoom.",
-  "width": 1400,
-  "height": 500,
+  "width": 1140,
+  "height": 600,
   "background": "skyblue",
   "autosize": "none",
   "signals": [

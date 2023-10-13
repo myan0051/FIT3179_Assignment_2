@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500,
-  "height": 500,
+  "width": 580,
+  "height": 600,
   "background": null,
   "title" : "Spending Category",
   "data": {"url": "https://raw.githubusercontent.com/myan0051/FIT3179_Assignment_2/main/data/spending_breakdown.csv"},
@@ -10,7 +10,7 @@
     "type": "circle",
     "filled": true,
     "tooltip": true,
-    "stroke": "white",
+    "stroke": "black",
     "strokeWidth": 1
   },
   "encoding": {
@@ -19,7 +19,7 @@
     "color": {
       "field": "Spending Category",
       "type": "nominal",
-      "scale": {"scheme": "category10"},
+      "scale": {"scheme": "dark2"},
       "legend": {
         "orient": "right",
         "offset": 10,
@@ -29,7 +29,7 @@
         "titleFontSize": 0
       }
     },
-    "size": {"value": 1300},
+    "size": {"value": 1900},
     "tooltip": [{"field": "Spending Category", "type": "nominal" }]
   },
   
