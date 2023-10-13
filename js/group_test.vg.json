@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "padding": 5,
-  "width": 1400,
-  "height": 1200,
+  "width": 1200,
+  "height": 900,
   "data": [
     {
       "name": "click_store",
@@ -52,18 +52,18 @@
     }
   ],
   "signals": [
-    {"name": "cx", "update": "800"},
-    {"name": "cy", "value": "550"},
+    {"name": "cx", "update": "700"},
+    {"name": "cy", "value": 340},
     {
       "name": "gravityX",
       "value": 0.36
     },
     {
       "name": "gravityY",
-      "value": 0.59
+      "value": 0.67
     },
-    {"name": "concat_0_height", "value": 560},
-    {"name": "concat_1_height", "value": 150},
+    {"name": "concat_0_height", "value": 460},
+    {"name": "concat_1_height", "value": 100},
     {
       "name": "unit",
       "value": {},
@@ -84,15 +84,15 @@
       "style": "view",
       "encode": {
         "update": {
-          "width": {"value": 1400},
-          "height": {"value": 1100}
+          "width": {"value": 1300},
+          "height": {"value": 700}
         }
       },
       "scales": [
     {
       "name": "size",
       "domain": {"data": "arcc", "field": "Value"},
-      "range": [0, 300]
+      "range": [0, 200]
     },
     {
       "name": "color",
@@ -146,7 +146,7 @@
             "enter": {
               "align": {"value": "center"},
               "baseline": {"value": "middle"},
-              "fontSize": {"value": 15},
+
               "fontWeight": {"value": "bold"},
               "fill": {"value": "black"},
               "text": {"field": "datum.Attribute"}
